@@ -1,0 +1,267 @@
+/*
+|--------------------------------------------------------------------------
+| Base Styles
+|--------------------------------------------------------------------------
+*/
+
+input[type="text"],
+input[type="password"],
+textarea {
+	background-color: #faf8f3;
+	border: 1px solid #ddd;
+	padding: 2px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Layout
+|--------------------------------------------------------------------------
+*/
+
+html,
+body {
+	background-color: #f9f5ed;
+	font-family: Thonburi,Verdana,sans-serif;
+	color: #3a3637;
+}
+
+.wrapper {
+	width: 980px;
+	margin: 0 auto;
+}
+
+#main-outer-wrapper {
+	border-top: 5px solid #3a3637;
+	border-bottom: 5px solid #d9deb0;
+}
+
+nav {
+	float: right;
+	line-height: 22px;
+}
+nav a {
+	float: left;
+	padding: 5px 10px;
+	color: #faf8f3;
+	font-family: "Croissant One",cursive;
+	text-decoration: none;
+	text-transform: lowercase;
+}
+nav a.services {
+	background-color: #d9deb0;
+}
+nav a.portfolio {
+	background-color: #abc4a4;
+}
+nav a.about-us {
+	background-color: #528a7f;
+}
+nav a.quote {
+	background-color: #425555;
+}
+
+header {
+	padding-top: 32px;
+	text-align: center;
+	width: 500px;
+	margin: 0 auto;
+}
+header #logo-above {
+	font-family: "Delius Unicase",cursive;
+	margin-top: 30px;
+	text-transform: uppercase;
+}
+header #logo img {
+	width: 500px;
+}
+header #logo-below {
+	font-family: "Oleo Script Swash Caps",cursive;
+	text-transform: lowercase;
+	text-align: right;
+}
+
+footer {
+	border-top: 20px solid #528a7f;
+	background-color: #3a3637;
+}
+
+footer #footer-top {
+	text-align: center;
+	border-bottom: 1px solid #faf8f3;
+	padding: 15px 0;
+}
+
+footer #footer-top a,
+footer #footer-top #check-us-out {
+	margin: 0 10px;
+}
+
+footer #footer-top #check-us-out {
+	color: #faf8f3;
+	font-weight: bold;
+	font-family: "Oleo Script Swash Caps",cursive;
+}
+
+footer #footer-bottom:before,
+footer #footer-bottom:after {
+    content: " ";
+    display: table;
+}
+footer #footer-bottom:after {
+    clear: both;
+}
+footer #footer-bottom {
+    *zoom: 1;
+    padding: 10px 0;
+    line-height: 22px;
+}
+
+footer #footer-bottom #copyright {
+	float: left;
+	color: #faf8f3;
+	font-size: 11px;
+}
+
+footer #footer-bottom #links {
+	float: right;
+}
+footer #footer-bottom #links a {
+	text-decoration: none;
+	color: #faf8f3;
+	font-size: 11px;
+	margin: 0 10px;
+}
+footer #footer-bottom #links a:hover {
+	text-decoration: underline;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Helpers
+|--------------------------------------------------------------------------
+*/
+
+.align-left {
+	text-align: left;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.font-delius-unicase {
+	font-family: "Delius Unicase",cursive;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Homepage
+|--------------------------------------------------------------------------
+*/
+
+#site-index .services {
+	background: url(/assets/img/layout/services-bg.png) no-repeat center center;
+	width: 100%;
+	height: 406px;
+	position: relative;
+	margin: 30px 0;
+}
+#site-index .services .left {
+	position: absolute;
+	width: 310px;
+	height: 362px;
+	left: 0;
+	top: 18px;
+}
+#site-index .services .right {
+	position: absolute;
+	width: 310px;
+	height: 362px;
+	right: 0;
+	top: 18px;
+	text-align: left;
+}
+#site-index .services .middle {
+	position: absolute;
+	width: 360px;
+	height: 406px;
+	left: 310px;
+	top: 0;
+	text-align: left;
+}
+#site-index .services .section {
+	font-family: "Delius Unicase",cursive;
+	text-transform: uppercase;
+	text-align: center;
+}
+#site-index .services .left h3,
+#site-index .services .middle h3,
+#site-index .services .right h3 {
+	font-size: 28px;
+}
+
+#site-index .services .section p:last-child {
+	text-align: right;
+	padding-right: 20px;
+}
+
+#site-index h2.gear,
+#site-index h2.latest,
+#site-index h2.love,
+#site-index h2.quote {
+	margin: 40px auto 20px auto;
+	width: 475px;
+	height: 73px;
+	background: url(/assets/img/layout/icons.png) center top no-repeat;
+	text-indent: -9999px;
+
+}
+
+#site-index h2.gear {
+	background-position-y: 0px;
+}
+#site-index h2.latest {
+	background-position-y: -73px;
+}
+#site-index h2.love {
+	background-position-y: -146px;
+}
+
+#site-index #latest {
+	text-align: center;
+}
+
+#site-index #latest .work {
+	display: inline-block;
+	margin: 0 10px;
+	position: relative;
+}
+
+#site-index #latest .work img {
+	width: 200px;
+	height: 170px;
+}
+
+#site-index #latest .work .caption {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 5px;
+	background: rgba(0,0,0,.7);
+	color: #fff;
+	font-weight: bold;
+	font-size: 12px;
+	display: none;
+}
+
+#site-index #quote-form {
+	width: 600px;
+	background-color: #faf8f3;
+	margin: 0 auto;
+	padding: 15px;
+}
