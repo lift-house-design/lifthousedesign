@@ -25,7 +25,9 @@ Custom Website Interface Design</p>
 <p class="font-delius-unicase align-center">All things creative:<br />
 Web Design | Mobile First Design | Copy/Content Development | Branding | Logo Design<br />
 Print Design | Info Graphics | Animation | Photography | Videography</p>
-<div class="align-center"><img src="/assets/img/layout/video.png" style="width: 980px;" /></div>
+<div class="align-center">
+<iframe src="http://player.vimeo.com/video/68054748?title=0&amp;byline=0&amp;portrait=0&amp;color=d9deb0" width="980" height="539" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+</div>
 <h2 class="latest">Just a Few of Our Latest</h2>
 <div id="latest">
 	<a href="#" class="work">
@@ -46,9 +48,25 @@ Print Design | Info Graphics | Animation | Photography | Videography</p>
 	</a>
 </div>
 <h2 class="love">We Love What We Do</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a tortor vel lorem imperdiet pellentesque in sed neque. Donec nec massa ornare, bibendum elit eget, egestas risus. Praesent quis tempor massa. Nulla commodo pellentesque lectus et tincidunt. Mauris at lobortis enim, a dignissim purus. Nam pellentesque lacus nunc, pulvinar faucibus velit luctus ut. Sed eu nulla nisl. Aenean et ornare quam, nec convallis lorem. Mauris pretium porta est. Proin auctor metus ut tristique fringilla. Nulla facilisi. Donec commodo sit amet neque varius laoreet. Donec consectetur hendrerit quam quis pretium. Integer sollicitudin magna suscipit, ultricies nisi non, lacinia tellus. Phasellus volutpat nunc augue, in commodo lectus vulputate sit amet.</p>
-<p>Donec vestibulum sem ac tristique aliquam. Cras vel vehicula ipsum. Donec quis nibh in urna bibendum accumsan. Nullam sed enim tempor, consectetur mi ac, sollicitudin purus. Mauris aliquam ornare quam, sed auctor felis. Pellentesque faucibus urna a dui tincidunt, in pharetra erat vulputate. Duis condimentum ipsum molestie tellus suscipit aliquam. Fusce imperdiet rhoncus elit, sed consectetur orci hendrerit sit amet. Duis gravida felis in quam sodales, in auctor neque viverra. Cras vel commodo lorem. Nam est tellus, fringilla a porttitor quis, rutrum ac diam. Vivamus velit eros, ultricies a risus eget, congue aliquet leo. Proin eu quam venenatis, varius eros in, eleifend erat. Vivamus non velit felis.</p>
-<p>Phasellus volutpat, lorem vitae elementum faucibus, sapien neque lobortis ipsum, quis lacinia lacus ligula non augue. Praesent quis lobortis nulla. Aenean sed enim libero. Phasellus ut ante nec mauris commodo euismod ac ut erat. Nulla vestibulum sagittis lectus eget feugiat. Nullam nisl mauris, varius quis leo tincidunt, scelerisque consequat magna. Morbi ante purus, blandit eget erat ut, scelerisque adipiscing leo. Vivamus nec convallis ante, vel semper diam. Vivamus placerat mauris quis turpis varius tincidunt. Sed porttitor malesuada quam vitae dignissim. Aenean eros massa, varius sed hendrerit sit amet, sollicitudin eu lacus.</p>
+<p>The following is provided as an offering to the SEO gods in hopes of their blessing. That is not to say, however, that there isn’t some good readin’ here…</p>
+<p>Do you own a web domain? Are you are thinking about buying a creative domain name that you have had your eye on?</p>
+<p>In either case, you should consider the following:</p>
+<ul>
+	<li>Mobile browsing is on the rise. Is your site ready?</li>
+	<li>Websites offer each business an opportunity to expand their customer base. Does your site add to your business model, or is it simply informational advertising?</li>
+	<li>Web pages are plentiful in every industry. Does your site stay relevant in this competitive landscape?</li>
+</ul>
+<p>Lift House Design is uniquely qualified to deliver solutions to these as well as many other issues your new business investment may encounter.</p>
+<p>Within the next 2 to 3 years, over 50% of your customers will be visiting your web page using a mobile device. Today, the vast majority of existing pages are not designed with mobile browsing in mind. What does this mean for your business? If your site falls behind technological trends, you could be turning over 50% of your clients away! This alone, will dramatically reduce your ROI.</p>
+<p>Speaking of ROI (Return on Investment), does your current web agency provide you with a return on investment statement or projection? Web agencies like to tell you what you "need to add" to your site. They, however, don't like to quantify those "necessary add-ons" with measurable results. Adding a professional looking web site to your business model is a great asset. Today, websites have the ability to not only look great, but automate some, or all of your business transactions. These automated web transactions could include inventory control, automated email and/or texting, HR tasks, and much, much more. Talk about reducing overhead! When considering a Web Agency be sure to ask, "For every dollar that I spend with your firm, how much money will I recover?"</p>
+<p>"www.", many businesses have them, but what does their content say about them?  Relevant, precise content is absolutely critical to maintaining a competitive edge against the competition. Additionally, finely crafted content can mean the difference between being located on page 1 or 100 of search results. In this regard, key words are, well, key. Maintaining relevant keywords, while analyzing your viewer demographics and traffic flow, will provide a competitive edge. Without doing so, any money spent on pay per click advertising is a waste.</p>
+<p>Lift House Design is a Web Agency that creates beautiful, functional, and innovative websites. We will work to become familiar with your specific business challenges and goals. Our goal?  To use web technology to overcome challenges, ensuring that your business goals are achieved. In doing so, our firm becomes deeply vested in designing a website that:</p>
+<ul>
+	<li>Works well on all devices(iphone, Android, etc.)</li>
+	<li>Is scalable to meet demand</li>
+	<li>Automates business functions and/or processes</li>
+</ul>
+<p>Ask us how we can help with your project today!</p>
 <h2 class="quote">A Quote, A Question, A Comment</h2>
 <form id="quote-form" method="post">
 	<?php if(!empty($notifications)): ?>
