@@ -9,7 +9,209 @@ input[type="password"],
 textarea {
 	background-color: #faf8f3;
 	border: 1px solid #ddd;
-	padding: 2px;
+	padding: 4px;
+	font-size: 12px;
+	font-family: "Delius Unicase",cursive;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+	outline: 0;
+	border-color: #528A7F;
+}
+
+input[type="submit"] {
+	background-color: #414142;
+	border: 0;
+	color: #fff;
+	font-weight: bold;
+	font-family: "Delius Unicase",cursive;
+	font-size: 11px;
+	padding: 8px 20px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+input[type="submit"]:hover {
+	background-color: #676767;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Helpers
+|--------------------------------------------------------------------------
+*/
+
+.align-left {
+	text-align: left;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.font-delius-unicase {
+	font-family: "Delius Unicase",cursive;
+}
+
+.font-oleo-script-swash-caps {
+	font-family: "Oleo Script Swash Caps",cursive;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.clear:before,
+.clear:after {
+	content: " ";
+	display: table;
+}
+
+.clear:after {
+	clear: both;
+}
+
+.clear {
+	*zoom: 1;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Animations
+|--------------------------------------------------------------------------
+*/
+
+@-webkit-keyframes fadein {
+	0% {
+		opacity: 0;
+		bottom: -26px;
+	}
+	100% {
+		opacity: 1;
+		bottom: 0px;
+	}
+}
+@-moz-keyframes fadein {
+	0% {
+		opacity: 0;
+		bottom: -26px;
+	}
+	100% {
+		opacity: 1;
+		bottom: 0px;
+	}
+}
+@-o-keyframes fadein {
+	0% {
+		opacity: 0;
+		bottom: -26px;
+	}
+	100% {
+		opacity: 1;
+		bottom: 0px;
+	}
+}
+@keyframes fadein {
+	0% {
+		opacity: 0;
+		bottom: -26px;
+	}
+	100% {
+		opacity: 1;
+		bottom: 0px;
+	}
+}
+
+@-webkit-keyframes fadeout {
+	0% {
+		opacity: 1;
+		bottom: 0px;
+	}
+	100% {
+		opacity: 0;
+		bottom: -26px;
+	}
+}
+@-moz-keyframes fadeout {
+	0% {
+		opacity: 1;
+		bottom: 0px;
+	}
+	100% {
+		opacity: 0;
+		bottom: -26px;
+	}
+}
+@-o-keyframes fadeout {
+	0% {
+		opacity: 1;
+		bottom: 0px;
+	}
+	100% {
+		opacity: 0;
+		bottom: -26px;
+	}
+}
+@keyframes fadeout {
+	0% {
+		opacity: 1;
+		bottom: 0px;
+	}
+	100% {
+		opacity: 0;
+		bottom: -26px;
+	}
+}
+
+/*
+|--------------------------------------------------------------------------
+| Modules
+|--------------------------------------------------------------------------
+*/
+
+.errors {
+	text-align: left;
+	font-size: 13px;
+	background-color: #ffdddd;
+	border: 1px solid #d90000;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.errors ul {
+	margin: 10px 0 0 0;
+	padding: 0 0 0 30px;
+	list-style: square;
+	font-weight: bold;
+}
+
+.info {
+	text-align: left;
+	font-size: 13px;
+	background-color: #cbcff6;
+	border: 1px solid #0014d9;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.info ul {
+	margin: 0;
+	padding: 0 0 0 30px;
+	list-style: square;
+	font-weight: bold;
 }
 
 /*
@@ -60,11 +262,36 @@ nav a.quote {
 	background-color: #425555;
 }
 
+#account {
+	float: left;
+	line-height: 27px;
+	background-color: #3a3637;
+	color: #faf8f3;
+	padding: 0 10px 5px 10px;
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #aeadad;
+	-webkit-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+}
+
+#account input[type="submit"] {
+	padding: 4px 10px;
+	background-color: #676767;
+	margin-left: 5px;
+}
+#account input[type="text"],
+#account input[type="password"] {
+	margin-left: 5px;
+	width: 100px;
+	font-size: 10px;
+}
+
 header {
 	padding-top: 32px;
 	text-align: center;
 	width: 500px;
-	margin: 0 auto;
+	margin: 0 auto 10px auto;
 }
 header #logo-above {
 	font-family: "Delius Unicase",cursive;
@@ -137,28 +364,6 @@ footer #footer-bottom #links a:hover {
 
 /*
 |--------------------------------------------------------------------------
-| Helpers
-|--------------------------------------------------------------------------
-*/
-
-.align-left {
-	text-align: left;
-}
-
-.align-center {
-	text-align: center;
-}
-
-.align-right {
-	text-align: right;
-}
-
-.font-delius-unicase {
-	font-family: "Delius Unicase",cursive;
-}
-
-/*
-|--------------------------------------------------------------------------
 | Homepage
 |--------------------------------------------------------------------------
 */
@@ -168,7 +373,7 @@ footer #footer-bottom #links a:hover {
 	width: 100%;
 	height: 406px;
 	position: relative;
-	margin: 30px 0;
+	margin: 20px 0 30px 0;
 }
 #site-index .services .left {
 	position: absolute;
@@ -230,6 +435,9 @@ footer #footer-bottom #links a:hover {
 #site-index h2.love {
 	background-position-y: -146px;
 }
+#site-index h2.quote {
+	background-position-y: -219px;
+}
 
 #site-index #latest {
 	text-align: center;
@@ -239,6 +447,7 @@ footer #footer-bottom #links a:hover {
 	display: inline-block;
 	margin: 0 10px;
 	position: relative;
+	overflow: hidden;
 }
 
 #site-index #latest .work img {
@@ -250,18 +459,70 @@ footer #footer-bottom #links a:hover {
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: 0;
-	padding: 5px;
+	bottom: -26px;
 	background: rgba(0,0,0,.7);
 	color: #fff;
 	font-weight: bold;
 	font-size: 12px;
-	display: none;
+	line-height: 26px;
+	opacity: 0;
+	-webkit-animation: fadeout .5s;
+	-moz-animation: fadeout .5s;
+	-o-animation: fadeout .5s;
+	animation: fadeout .5s;
+}
+
+#site-index #latest .work:hover .caption {
+	opacity: 1;
+	bottom: 0px;
+	-webkit-animation: fadein .5s;
+	-moz-animation: fadein .5s;
+	-o-animation: fadein .5s;
+	animation: fadein .5s;
 }
 
 #site-index #quote-form {
 	width: 600px;
 	background-color: #faf8f3;
-	margin: 0 auto;
+	margin: 0 auto 20px auto;
 	padding: 15px;
+	text-align: center;
+}
+
+#site-index #quote-form input.error,
+#site-index #quote-form textarea.error {
+	margin-bottom: 5px !important;
+	border-color: #d90000;
+}
+
+#site-index #quote-form label.error {
+	margin-bottom: 10px;
+	font-weight: bold;
+	display: block;
+	text-align: left;
+	padding-left: 5px;
+	font-family: Thonburi,Verdana,sans-serif;
+	font-size: 11px;
+	color: #d90000;
+}
+
+#site-index #quote-form .clear {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#site-index #quote-form .clear .float-left {
+	width: 291px;
+}
+#site-index #quote-form .clear .float-right {
+	width: 291px;
+}
+#site-index #quote-form .clear .float-left input[type="text"],
+#site-index #quote-form .clear .float-right textarea {
+	width: 280px;
+}
+#site-index #quote-form .clear .float-left input[type="text"] {
+	margin-bottom: 10px;
+}
+#site-index #quote-form .clear .float-right textarea {
+	height: 155px;
 }

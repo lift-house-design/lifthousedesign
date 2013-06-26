@@ -18,6 +18,12 @@
 <body>
 	<div id="main-outer-wrapper">
 		<div class="wrapper">
+			<div id="account">
+				Client Login: 
+				<input type="text" placeholder="E-mail" /> 
+				<input type="password" placeholder="Password" /> 
+				<input type="submit" value="Login" />
+			</div>
 			<nav>
 				<?php echo anchor('services','Services','class="services"') ?>
 				<?php echo anchor('portfolio','Portfolio','class="portfolio"') ?>
@@ -34,7 +40,24 @@
 				<div id="logo-below">Your ascent to the summit begins here...</div>
 			</header>
 			<div id="<?php echo $slug_id_string ?>">
+				<?php if($slug_id_string!='site-index'): ?>
+					<?php if(!empty($notifications)): ?>
+						<div class="info">
+							<ul>
+								<li><?php echo implode('</li><li>',$notifications) ?></li>
+							</ul>
+						</div>
+					<?php endif; ?>
+					<?php if(!empty($errors)): ?>
+						<div class="errors">
+							The following errors occured:
+							<ul><?php echo $errors ?></ul>
+						</div>
+					<?php endif; ?>
+				<?php endif; ?>
+
 				<?php echo $yield ?>
+
 			</div>
 		</div>
 	</div>

@@ -51,6 +51,31 @@ Print Design | Info Graphics | Animation | Photography | Videography</p>
 <p>Phasellus volutpat, lorem vitae elementum faucibus, sapien neque lobortis ipsum, quis lacinia lacus ligula non augue. Praesent quis lobortis nulla. Aenean sed enim libero. Phasellus ut ante nec mauris commodo euismod ac ut erat. Nulla vestibulum sagittis lectus eget feugiat. Nullam nisl mauris, varius quis leo tincidunt, scelerisque consequat magna. Morbi ante purus, blandit eget erat ut, scelerisque adipiscing leo. Vivamus nec convallis ante, vel semper diam. Vivamus placerat mauris quis turpis varius tincidunt. Sed porttitor malesuada quam vitae dignissim. Aenean eros massa, varius sed hendrerit sit amet, sollicitudin eu lacus.</p>
 <h2 class="quote">A Quote, A Question, A Comment</h2>
 <form id="quote-form" method="post">
-	tell us about your project:
-	<textarea name="message"></textarea>
+	<?php if(!empty($notifications)): ?>
+		<div class="info">
+			<ul>
+				<li><?php echo implode('</li><li>',$notifications) ?></li>
+			</ul>
+		</div>
+	<?php endif; ?>
+	<?php if(!empty($errors)): ?>
+		<div class="errors">
+			The following errors occured:
+			<ul><?php echo $errors ?></ul>
+		</div>
+	<?php endif; ?>
+	<span class="font-oleo-script-swash-caps">tell us about your project:</span>
+	<div class="clear">
+		<div class="float-left">
+			<input type="text" name="name" placeholder="Name *" />
+			<input type="text" name="company" placeholder="Company" />
+			<input type="text" name="website" placeholder="Web site" class="url" />
+			<input type="text" name="email" placeholder="E-mail *" />
+			<input type="text" name="phone" placeholder="Phone" class="phone" />
+		</div>
+		<div class="float-right">
+			<textarea name="project_info" placeholder="Project info *"></textarea>
+		</div>
+	</div>
+	<input type="submit" value="Send" />
 </form>

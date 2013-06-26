@@ -91,5 +91,43 @@ if(!function_exists('states_array'))
 	}
 }
 
+if(!function_exists('send_email'))
+{
+	function send_email($template,$data,$to=NULL)
+	{
+		$CI=get_instance();
+		$CI->load->library('email');
+		$config=$CI->config->item('email_notifications');
+
+		if(empty($config['templates'][$template]))
+			return FALSE;
+		if(empty($to))
+		{
+			if(!empty($config['templates'][$template]['to']))
+				$to=$config['templates'][$template]['to'];
+			else
+				return FALSE;
+		}
+		if(!empty($config['config']))
+			$CI->email->initialize($config['config']);
+
+		$subject=$config['templates'][$template]['subject'];
+		$message=$config['templates'][$template]['message'];
+
+		foreach($data as $k=>$v)
+		{
+			$subject=str_replace('{'.$k.'}',$v,$subject);
+			$message=str_replace('{'.$k.'}',$v,$message);
+		}
+
+		$CI->email->from($config['sender_email'],$config['sender_name']);
+		$CI->email->to($to);
+		$CI->email->subject($subject);
+		$CI->email->message($message);
+
+		return $CI->email->send();
+	}
+}
+
 /* End of file project_helper.php */
 /* Location: ./application/helpers/project_helper.php */

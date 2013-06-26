@@ -53,7 +53,13 @@ class App_Controller extends CI_Controller
      */
     protected $helpers = array('url','html','form','project');
     
-    protected $js=array('jquery-1.9.1.min.js');
+    //protected $js=array('jquery-1.9.1.min.js');
+    protected $js=array(
+        array(
+            'file'=>'//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js',
+            'type'=>'js',
+        ),
+    );
     
     protected $css=array('reset.css','application.css');
     

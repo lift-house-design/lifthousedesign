@@ -65,16 +65,35 @@ $config['ga_code']=FALSE;
 
 /*
 |--------------------------------------------------------------------------
-| Contact Form Configuration
+| E-mail Notifications Configuration
 |--------------------------------------------------------------------------
 */
-$config['contact_form']=array(
-	'recipient_email'=>'nickniebaum@gmail.com',
-	'recipient_name'=>'Nick Niebaum',
-	'sender_email'=>'nickniebaum@gmail.com',
-	'sender_name'=>'Nick Niebaum',
-	'subject'=>'Website Contact Form Submitted by {first_name} {last_name}',
-	'body'=>file_get_contents(dirname(__FILE__).'/templates/contact_form.php'),
+$config['email_notifications']=array(
+	'sender_email'=>'no-reply@lifthousedesign.com',
+	'sender_name'=>'Lift House Design',
+	/*'config'=>array(
+		'protocol'=>'smtp',
+		'smtp_host'=>'ssl://secure.emailsrvr.com',
+		'smtp_user'=>'system@accidentreview.com',
+		'smtp_pass'=>'9iojkl',
+		'smtp_port'=>'465',
+		'mailtype'=>'text',
+	),*/
+	'config'=>array(
+		'protocol'=>'smtp',
+		'smtp_host'=>'mail.lifthousedesign.com',
+		'smtp_user'=>'no-reply@lifthousedesign.com',
+		'smtp_pass'=>'9sbZdlAklydT',
+		'smtp_port'=>'25',
+		'mailtype'=>'text',
+	),
+	'templates'=>array(
+		'inquiry'=>array(
+			'subject'=>'Inquiry Received via lifthousedesign.com',
+			'message'=>file_get_contents(dirname(__FILE__).'/templates/email/inquiry.php'),
+			'to'=>'nick@mvbeattie.com',
+		),
+	),
 );
 
 /* End of file app.php */
