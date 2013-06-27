@@ -28,25 +28,18 @@ Print Design | Info Graphics | Animation | Photography | Videography</p>
 <div class="align-center">
 <iframe src="http://player.vimeo.com/video/68054748?title=0&amp;byline=0&amp;portrait=0&amp;color=d9deb0" width="980" height="539" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 </div>
+<?php if(!empty($portfolio)): ?>
 <h2 class="latest">Just a Few of Our Latest</h2>
 <div id="latest">
-	<a href="#" class="work">
-		<img src="http://placehold.it/300x250" />
-		<span class="caption">Locizzle</span>
+<?php foreach($portfolio as $work): ?>
+	<!--a href="<?php echo site_url('site/portfolio/'.$work['id']) ?>" class="work"-->
+	<a class="work">
+		<?php echo img($work['image']) ?>
+		<span class="caption"><?php echo $work['name'] ?></span>
 	</a>
-	<a href="#" class="work">
-		<img src="http://placehold.it/300x250" />
-		<span class="caption">Accident Review</span>
-	</a>
-	<a href="#" class="work">
-		<img src="http://placehold.it/300x250" />
-		<span class="caption">Seekonk Car Storage</span>
-	</a>
-	<a href="#" class="work">
-		<img src="http://placehold.it/300x250" />
-		<span class="caption">Another Awesome Site</span>
-	</a>
+<?php endforeach; ?>
 </div>
+<?php endif; ?>
 <h2 class="love">We Love What We Do</h2>
 <p>The following is provided as an offering to the SEO gods in hopes of their blessing. That is not to say, however, that there isn’t some good readin’ here…</p>
 <p>Do you own a web domain? Are you are thinking about buying a creative domain name that you have had your eye on?</p>
@@ -62,7 +55,7 @@ Print Design | Info Graphics | Animation | Photography | Videography</p>
 <p>"www.", many businesses have them, but what does their content say about them?  Relevant, precise content is absolutely critical to maintaining a competitive edge against the competition. Additionally, finely crafted content can mean the difference between being located on page 1 or 100 of search results. In this regard, key words are, well, key. Maintaining relevant keywords, while analyzing your viewer demographics and traffic flow, will provide a competitive edge. Without doing so, any money spent on pay per click advertising is a waste.</p>
 <p>Lift House Design is a Web Agency that creates beautiful, functional, and innovative websites. We will work to become familiar with your specific business challenges and goals. Our goal?  To use web technology to overcome challenges, ensuring that your business goals are achieved. In doing so, our firm becomes deeply vested in designing a website that:</p>
 <ul>
-	<li>Works well on all devices(iphone, Android, etc.)</li>
+	<li>Works well on all devices (iPhone, Android, etc.)</li>
 	<li>Is scalable to meet demand</li>
 	<li>Automates business functions and/or processes</li>
 </ul>

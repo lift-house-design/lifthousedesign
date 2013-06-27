@@ -41,6 +41,16 @@
 $route['default_controller'] = "site";
 $route['404_override'] = '';
 
+// Coming soon is opened in a fancybox modal
+$route['services']='site/coming_soon';
+$route['portfolio']='site/coming_soon';
+$route['about-us']='site/coming_soon';
+$route['quote']='site/coming_soon';
+
+$route['terms-of-use']='site/coming_soon';
+$route['privacy-policy']='site/coming_soon';
+$route['contact-us']='site/coming_soon';
+
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
