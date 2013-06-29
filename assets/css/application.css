@@ -11,12 +11,12 @@ h4,
 h5,
 h6 {
 	font-family: "Delius Unicase",cursive;
-	color: #528a7f;	
 	margin: 10px 0;
 }
 
 h1 {
 	font-size: 24px;
+	color: #528a7f;	
 }
 
 input[type="text"],
@@ -250,11 +250,13 @@ body {
 #main-outer-wrapper {
 	border-top: 5px solid #3a3637;
 	border-bottom: 5px solid #d9deb0;
+	min-width: 980px;
 }
 
 nav {
 	float: right;
 	line-height: 22px;
+
 }
 nav a {
 	float: left;
@@ -263,6 +265,7 @@ nav a {
 	font-family: "Croissant One",cursive;
 	text-decoration: none;
 	text-transform: lowercase;
+	font-size: 16px;
 }
 nav a.services {
 	background-color: #d9deb0;
@@ -311,6 +314,7 @@ header {
 header #logo-above {
 	font-family: "Delius Unicase",cursive;
 	margin-top: 30px;
+	font-size: 16px;
 	text-transform: uppercase;
 }
 header #logo img {
@@ -320,11 +324,13 @@ header #logo-below {
 	font-family: "Oleo Script Swash Caps",cursive;
 	text-transform: lowercase;
 	text-align: right;
+	font-size: 16px;
 }
 
 footer {
 	border-top: 20px solid #528a7f;
 	background-color: #3a3637;
+	min-width: 980px;
 }
 
 footer #footer-top {
@@ -354,7 +360,7 @@ footer #footer-bottom:after {
 }
 footer #footer-bottom {
     *zoom: 1;
-    padding: 10px 0;
+    padding: 10px;
     line-height: 22px;
 }
 
@@ -371,7 +377,7 @@ footer #footer-bottom #links a {
 	text-decoration: none;
 	color: #faf8f3;
 	font-size: 11px;
-	margin: 0 10px;
+	margin-left: 20px;
 }
 footer #footer-bottom #links a:hover {
 	text-decoration: underline;
@@ -450,7 +456,6 @@ footer #footer-bottom #links a:hover {
 	height: 73px;
 	background: url(/assets/img/layout/icons.png) center top no-repeat;
 	text-indent: -9999px;
-
 }
 
 #site-index h2.gear {
@@ -497,6 +502,36 @@ footer #footer-bottom #links a:hover {
 	-moz-animation: fadeout .5s;
 	-o-animation: fadeout .5s;
 	animation: fadeout .5s;
+}
+
+.fancybox-skin {
+	background-color: #f9f5ed !important;
+}
+
+#work-details {
+	padding: 20px;
+	width: 560px;
+	background-color: #faf8f3;
+}
+#work-details .float-left {
+	width: 200px;
+	text-align: center;
+	font-size: 12px;
+}
+
+#work-details .float-left img {
+	width: 200px;
+	height: 170px;
+	margin-bottom: 10px;
+}
+
+#work-details .float-right {
+	width: 340px;
+	margin-left: 20px;
+}
+
+#work-details .clear {
+	
 }
 
 #site-index #latest .work:hover .caption {

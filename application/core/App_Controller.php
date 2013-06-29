@@ -67,6 +67,8 @@ class App_Controller extends CI_Controller
     
     protected $authenticate=FALSE;
 
+    protected $is_mobile=FALSE;
+
     /* --------------------------------------------------------------
      * GENERIC METHODS
      * ------------------------------------------------------------ */
@@ -85,7 +87,10 @@ class App_Controller extends CI_Controller
         $this->_load_helpers();
         $this->_load_models();
         
-        
+        $this->load->library('Mobile_Detect');
+        $this->is_mobile=$this->mobile_detect->isMobile() && !$this->mobile_detect->isTablet();
+        if($this->is_mobile)
+            $this->css[]='mobile.css';
     }
 
     /* --------------------------------------------------------------
@@ -124,6 +129,8 @@ class App_Controller extends CI_Controller
         $this->data['title']=empty($this->title) ? $site_name : sprintf($this->config->item('title_format'),$site_name,$this->title);
         $this->data['copyright']=$copyright;
         $this->data['ga_code']=$this->config->item('ga_code');
+        $this->data['dev_mode']=$this->config->item('dev_mode');
+        $this->data['is_mobile']=$this->is_mobile;
         
         /*
         |--------------------------------------------------------------------------
@@ -236,7 +243,10 @@ class App_Controller extends CI_Controller
                 }
                 else
                 {
-                    $layout = 'layouts/application';
+                    /*if($this->is_mobile===TRUE && file_exists(APPPATH . 'views/layouts/application_mobile.php'))
+                        $layout='layouts/application_mobile';
+                    else*/
+                        $layout = 'layouts/application';
                 }
             }
 

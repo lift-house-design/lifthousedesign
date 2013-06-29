@@ -20,14 +20,29 @@ $config['dev_mode']=TRUE;
 |
 |--------------------------------------------------------------------------
 */
-$config['database']=array(
-	'hostname'=>'localhost',
-	'username'=>'root',
-	'password'=>'',
-	'database'=>'lifthousedesign',
-	'dbdriver'=>'mysql',
-	'db_debug'=>$config['dev_mode'],
-);
+if($config['dev_mode']===TRUE)
+{
+	$config['database']=array(
+		'hostname'=>'localhost',
+		'username'=>'root',
+		'password'=>'root',
+		'database'=>'lifthousedesign',
+		'dbdriver'=>'mysql',
+		'db_debug'=>$config['dev_mode'],
+	);
+}
+else
+{
+	$config['database']=array(
+		'hostname'=>'localhost',
+		'username'=>'thomas',
+		'password'=>'iotaalpha08',
+		'database'=>'thomas_lhd',
+		'dbdriver'=>'mysql',
+		'db_debug'=>$config['dev_mode'],
+	);
+}
+
 
 /*
 |--------------------------------------------------------------------------

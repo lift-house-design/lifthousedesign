@@ -18,6 +18,7 @@
 		<p>Get a Quote</p>
 	</div>
 </div>
+
 <h2 class="gear">Gear to Get You to the Summit</h2>
 <p class="font-delius-unicase align-center">All things web:<br />
 CMS | HTML/CSS | Database Development | Social Media and Analytics Integration | E-commerce<br />
@@ -26,20 +27,27 @@ Custom Website Interface Design</p>
 Web Design | Mobile First Design | Copy/Content Development | Branding | Logo Design<br />
 Print Design | Info Graphics | Animation | Photography | Videography</p>
 <div class="align-center">
-<iframe src="http://player.vimeo.com/video/68054748?title=0&amp;byline=0&amp;portrait=0&amp;color=d9deb0" width="980" height="539" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+<?php if($is_mobile): ?>
+	<iframe src="http://player.vimeo.com/video/68054748?title=0&amp;byline=0&amp;portrait=0&amp;color=d9deb0" width="300" height="165" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+<?php else: ?>
+	<iframe src="http://player.vimeo.com/video/68054748?title=0&amp;byline=0&amp;portrait=0&amp;color=d9deb0" width="980" height="539" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+<?php endif; ?>
 </div>
+
+
 <?php if(!empty($portfolio)): ?>
 <h2 class="latest">Just a Few of Our Latest</h2>
 <div id="latest">
 <?php foreach($portfolio as $work): ?>
-	<!--a href="<?php echo site_url('site/portfolio/'.$work['id']) ?>" class="work"-->
-	<a class="work">
+	<a href="<?php echo site_url('site/portfolio_details/'.$work['id']) ?>" class="work">
+	<!--a class="work"-->
 		<?php echo img($work['image']) ?>
 		<span class="caption"><?php echo $work['name'] ?></span>
 	</a>
 <?php endforeach; ?>
 </div>
 <?php endif; ?>
+
 <h2 class="love">We Love What We Do</h2>
 <p>The following is provided as an offering to the SEO gods in hopes of their blessing. That is not to say, however, that there isn’t some good readin’ here…</p>
 <p>Do you own a web domain? Are you are thinking about buying a creative domain name that you have had your eye on?</p>

@@ -25,7 +25,6 @@ class Site extends App_Controller
 		
 		// Other assets
 		$this->js[]='site-index.js';
-		$this->css[]='mobile.css';
 
 		if($this->input->post())
 		{
@@ -41,6 +40,12 @@ class Site extends App_Controller
 	public function coming_soon()
 	{
 		$this->layout=FALSE;
+	}
+
+	public function portfolio_details($id)
+	{
+		$this->layout=FALSE;
+		$this->data['work']=$this->portfolio->get($id);
 	}
 }
 

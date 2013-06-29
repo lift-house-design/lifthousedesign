@@ -89,7 +89,7 @@
 		</div>
 	</footer>
 	<?php echo js($js) ?>
-	<?php if($ga_code!==false): ?>
+	<?php if($ga_code!==FALSE && $dev_mode!==TRUE): ?>
 	<script>
 		var _gaq=[['_setAccount','<?php echo $ga_code ?>'],['_trackPageview']];
 		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
