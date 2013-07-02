@@ -18,18 +18,30 @@
 <body>
 	<div id="main-outer-wrapper">
 		<div class="wrapper">
-			<div id="account">
+			<!--div id="account">
 				Client Login: 
 				<input type="text" placeholder="E-mail" /> 
 				<input type="password" placeholder="Password" /> 
 				<input type="submit" value="Login" />
-			</div>
+			</div-->
 			<nav>
 				<?php echo anchor('services','Services','class="services"') ?>
 				<?php echo anchor('portfolio','Portfolio','class="portfolio"') ?>
 				<?php echo anchor('about-us','About Us','class="about-us"') ?>
 				<?php echo anchor('quote','Quote','class="quote"') ?>
+				<?php echo anchor('#','Log In','class="login"') ?>
 			</nav>
+			<div id="login">
+				<?php echo form_input(array(
+					'name'=>'email',
+					'placeholder'=>'E-mail',
+				)) ?>
+				<?php echo form_password(array(
+					'name'=>'password',
+					'placeholder'=>'Password',
+				)) ?>
+				<?php echo form_submit('login','Log In') ?>
+			</div>
 			<header>
 				<div id="logo-above">Web Design. Web Development. Web Innovation.</div>
 				<?php echo anchor('/',img(array(

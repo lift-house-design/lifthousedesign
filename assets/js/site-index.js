@@ -48,10 +48,38 @@ $(function(){
 		});
 	}
 
-	$('nav a, #footer-bottom a').fancybox({
+	$('nav a:not(.login), #footer-bottom a').fancybox({
 		type: 'ajax',
 		autoWidth: false,
 		width: 400,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+	});
+	/*$('nav a.login').click(function(){
+		if($('#login:visible').length)
+		{
+			$('#login').animate({
+				opacity: 0,
+				top: '-100px'
+			},{
+				duration: 500
+			});
+		}
+		else
+		{
+			$('#login').animate({
+				opacity: 1,
+				top: '0px'
+			},{
+				duration: 500
+			});
+		}
+	});*/
+	$('nav a.login').click(function(){
+		$('#login')
+			.show()
+			.toggleClass('visible');
+
+		if($('#login').hasClass('visible'))
+			$('#login input[name="email"]').focus();
 	});
 
 	$('#latest .work').fancybox({
