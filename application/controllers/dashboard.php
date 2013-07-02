@@ -4,7 +4,9 @@ class Dashboard extends App_Controller
 {
 	public function index()
 	{
-		
+		$this->load->library('harvestapi');
+		$this->harvestapi->setUser('some@user.com');
+		//var_dump($this->harvestapi);
 	}
 }
 

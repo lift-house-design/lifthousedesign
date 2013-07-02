@@ -40,7 +40,7 @@ class App_Controller extends CI_Controller
     /**
      * A list of models to be autoloaded
      */
-    protected $models = array('user','employee','client');
+    protected $models = array('user');
 
     /**
      * A formatting string for the model autoloading feature.

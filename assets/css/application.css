@@ -415,12 +415,14 @@ nav a.quote:hover {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#425555', endColorstr='#223332',GradientType=0 );
 }
 nav a.login,
-nav a.dashboard {
+nav a.dashboard,
+nav a.logout {
 	background-color: #333132;
 	cursor: pointer;
 }
 nav a.login:hover,
-nav a.dashboard:hover {
+nav a.dashboard:hover,
+nav a.logout:hover {
 	background: #333132;
 	background: -moz-linear-gradient(top,  #333132 50%, #131212 50%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#333132), color-stop(50%,#131212));

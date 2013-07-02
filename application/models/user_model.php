@@ -87,8 +87,7 @@
 
 		public function authenticate($role=NULL)
 		{
-			if($this->logged_in!==TRUE)
-				return FALSE;
+			return $this->logged_in===TRUE;
 		}
 	}
 	

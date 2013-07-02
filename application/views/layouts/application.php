@@ -18,12 +18,6 @@
 <body>
 	<div id="main-outer-wrapper">
 		<div class="wrapper">
-			<!--div id="account">
-				Client Login: 
-				<input type="text" placeholder="E-mail" /> 
-				<input type="password" placeholder="Password" /> 
-				<input type="submit" value="Login" />
-			</div-->
 			<nav>
 				<?php echo anchor('services','Services','class="services"') ?>
 				<?php echo anchor('portfolio','Portfolio','class="portfolio"') ?>
@@ -31,6 +25,7 @@
 				<?php echo anchor('quote','Quote','class="quote"') ?>
 				<?php if($logged_in): ?>
 					<?php echo anchor('dashboard','Dashboard','class="dashboard"') ?>
+					<?php echo anchor('logout','Log Out','class="logout"') ?>
 				<?php else: ?>
 					<a class="login">Log In</a>
 				<?php endif; ?>
