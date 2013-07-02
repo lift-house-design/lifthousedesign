@@ -51,6 +51,9 @@ $route['terms-of-use']='site/coming_soon';
 $route['privacy-policy']='site/coming_soon';
 $route['contact-us']='site/coming_soon';
 
+$route['login']='site/login';
+$route['logout']='site/logout';
+
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

@@ -69,19 +69,21 @@ Print Design | Info Graphics | Animation | Photography | Videography</p>
 </ul>
 <p>Ask us how we can help with your project today!</p>
 <h2 class="quote">A Quote, A Question, A Comment</h2>
-<form id="quote-form" method="post">
-	<?php if(!empty($notifications)): ?>
-		<div class="info">
-			<ul>
-				<li><?php echo implode('</li><li>',$notifications) ?></li>
-			</ul>
-		</div>
-	<?php endif; ?>
-	<?php if(!empty($errors)): ?>
-		<div class="errors">
-			The following errors occured:
-			<ul><?php echo $errors ?></ul>
-		</div>
+<form id="quote-form" method="post" action="/">
+	<?php if($this->input->post('send_quote')): ?>
+		<?php if(!empty($notifications)): ?>
+			<div class="info">
+				<ul>
+					<li><?php echo implode('</li><li>',$notifications) ?></li>
+				</ul>
+			</div>
+		<?php endif; ?>
+		<?php if(!empty($errors)): ?>
+			<div class="errors">
+				The following errors occured:
+				<ul><?php echo $errors ?></ul>
+			</div>
+		<?php endif; ?>
 	<?php endif; ?>
 	<span class="font-oleo-script-swash-caps">tell us about your project:</span>
 	<div class="clear">
@@ -96,5 +98,5 @@ Print Design | Info Graphics | Animation | Photography | Videography</p>
 			<textarea name="project_info" placeholder="Project info *"></textarea>
 		</div>
 	</div>
-	<input type="submit" value="Send" />
+	<input type="submit" name="send_quote" value="Send" />
 </form>

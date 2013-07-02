@@ -40,7 +40,7 @@ class App_Controller extends CI_Controller
     /**
      * A list of models to be autoloaded
      */
-    protected $models = array('user');
+    protected $models = array('user','employee','client');
 
     /**
      * A formatting string for the model autoloading feature.
@@ -206,8 +206,8 @@ class App_Controller extends CI_Controller
     protected function _load_view()
     {
         // Check for authentication
-        if($this->authenticate===TRUE && $this->user->logged_in!==TRUE)
-            redirect('login');
+        if($this->authenticate!==FALSE && $this->user->authenticate($this->authenticate)===FALSE)
+            redirect('/');
         
         // If $this->view == FALSE, we don't want to load anything
         if ($this->view !== FALSE)

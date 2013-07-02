@@ -2,7 +2,15 @@
 
 class Site extends App_Controller
 {
-	protected $models=array('user','inquiry','portfolio');
+	public function __construct()
+	{
+		$this->models=array_merge($this->models,array(
+			'inquiry',
+			'portfolio',
+		));
+
+		parent::__construct();
+	}
 
 	public function index()
 	{
@@ -26,7 +34,7 @@ class Site extends App_Controller
 		// Other assets
 		$this->js[]='site-index.js';
 
-		if($this->input->post())
+		if($this->input->post('send_quote'))
 		{
 			if($this->inquiry->insert($this->input->post()))
 			{
@@ -46,6 +54,28 @@ class Site extends App_Controller
 	{
 		$this->layout=FALSE;
 		$this->data['work']=$this->portfolio->get($id);
+	}
+
+	public function login()
+	{
+		if($data=$this->input->post('login'))
+		{
+			if($this->user->log_in())
+			{
+				$this->set_notification('You have successfully logged in.');
+				redirect('dashboard');
+			}
+		}
+
+		$this->index();
+		$this->view='site/index';
+	}
+
+	public function logout()
+	{
+		$this->user->log_out();
+		$this->set_notification('You have successfully logged out.');
+		redirect('/');
 	}
 }
 

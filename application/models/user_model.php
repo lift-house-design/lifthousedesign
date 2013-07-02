@@ -36,57 +36,53 @@
 				$this->data=$user;
 		}
 		
-		public function log_in($email=NULL,$password=NULL)
+		public function log_in()
 		{
-			if(!isset($email))
-				$email=$this->input->post('email');
-			if(!isset($password))
-				$password=$this->input->post('password');
+			$rules=array(
+				array(
+					'field'=>'email',
+					'label'=>'E-mail',
+					'rules'=>'required|max_length[64]|valid_email',
+				),
+				array(
+					'field'=>'password',
+					'label'=>'Password',
+					'rules'=>'required|sha1',
+				),
+			);
+
+			$this->form_validation->set_rules($rules);
+
+			if($this->form_validation->run()!==FALSE)
+			{
+				$user=$this->get_by(array(
+					'email'=>$this->input->post('email'),
+					'password'=>$this->input->post('password'),
+				));
+				
+				if(empty($user))
+				{
+					$this->form_validation->set_error('The e-mail address or password you entered was incorrect. Please try again.');
+					return FALSE;
+				}
+				
+				$this->session->set_userdata('user',$user);
+
+				$this->update($user['id'],array(
+					'last_login'=>date('Y-m-d H:i:s'),
+				));
+
+				return TRUE;
+			}
 			
-			if(empty($email)||empty($password))
-				return FALSE;
-			
-			$user=$this->get_by(array(
-				'email'=>$email,
-				'password'=>sha1($password),
-			));
-			
-			if(empty($user))
-				return FALSE;
-			
-			$this->session->set_userdata('user',$user);
-			
-			return TRUE;
+			return FALSE;
 		}
 		
 		public function log_out()
 		{
 			$this->session->unset_userdata('user');
-		}
-		
-		public function change_password($current_password,$new_password)
-		{
-			// Can't change the password of a user not logged in
-			if($this->logged_in===FALSE)
-				return FALSE;
-			
-			// Confirm the current password
-			$user=$this->get_by(array(
-				'id'=>$this->data['id'],
-				'password'=>sha1($current_password),
-			));
-			
-			if(empty($user))
-				return FALSE;
-			else
-			{
-				// Change the password
-				$this->update($this->data['id'],array(
-					'password'=>sha1($new_password),
-				));
-				
-				return TRUE;
-			}
+
+			return TRUE;
 		}
 
 		public function authenticate($role=NULL)
