@@ -61,7 +61,7 @@ class App_Controller extends CI_Controller
         ),
     );
     
-    protected $css=array('reset.css','application.css','mobile.css');
+    protected $css=array('reset.css','application.css');
     
     protected $title;
     
