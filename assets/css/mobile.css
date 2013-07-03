@@ -2,6 +2,88 @@ p {
 	padding: 0 10px;
 }
 
+/*@-webkit-keyframes login-visible {
+	0% {
+		opacity: 0;
+		top: -100px;
+	}
+	100% {
+		opacity: 1;
+		top: 40px;
+	}
+}
+@-moz-keyframes login-visible {
+	0% {
+		opacity: 0;
+		top: -100px;
+	}
+	100% {
+		opacity: 1;
+		top: 40px;
+	}
+}
+@-o-keyframes login-visible {
+	0% {
+		opacity: 0;
+		top: -100px;
+	}
+	100% {
+		opacity: 1;
+		top: 40px;
+	}
+}
+@keyframes login-visible {
+	0% {
+		opacity: 0;
+		top: -100px;
+	}
+	100% {
+		opacity: 1;
+		top: 40px;
+	}
+}
+
+@-webkit-keyframes login-hidden {
+	0% {
+		opacity: 1;
+		top: 40px;
+	}
+	100% {
+		opacity: 0;
+		top: -100px;
+	}
+}
+@-moz-keyframes login-hidden {
+	0% {
+		opacity: 1;
+		top: 40px;
+	}
+	100% {
+		opacity: 0;
+		top: -100px;
+	}
+}
+@-o-keyframes login-hidden {
+	0% {
+		opacity: 1;
+		top: 40px;
+	}
+	100% {
+		opacity: 0;
+		top: -100px;
+	}
+}
+@keyframes login-hidden {
+	0% {
+		opacity: 1;
+		top: 40px;
+	}
+	100% {
+		opacity: 0;
+		top: -100px;
+	}
+}*/
+
 /*
 |--------------------------------------------------------------------------
 | Layout
