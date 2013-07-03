@@ -111,5 +111,37 @@ $config['email_notifications']=array(
 	),
 );
 
+/*
+|--------------------------------------------------------------------------
+| Harvest Configuration
+|--------------------------------------------------------------------------
+|
+| These are the settings for retrieving data from our Harvest time tracking
+| web application that is displayed on the client dashboard page.
+|
+| 'user'				the e-mail address of the account that will be
+|						used to log in to Harvest's API; this should
+|						be a dedicated administrator account used only
+|						for this purpose
+|
+| 'password'			the password to the account used to access Harvest
+|
+| 'account'				the string used to identify our Harvest
+|						account, for example, if we access our account at
+|						https://lifthousedesign.harvestapp.com, then
+|						the company string would be "lifthousedesign"
+|
+| 'use_ssl'				a boolean that determines whether or not to use
+|						SSL to encrypt traffic between the application
+|						and Harvest
+|
+*/
+$config['harvest']=array(
+	'user'=>'api@lifthousedesign.com',
+	'password'=>'XO18D8q1w371Xaf',
+	'account'=>'lifthousedesign',
+	'use_ssl'=>FALSE,
+);
+
 /* End of file app.php */
 /* Location: ./application/config/app.php */

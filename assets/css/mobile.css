@@ -36,6 +36,9 @@ nav:after {
 }*/
 nav a {
 	font-size: 9px;
+	width: auto;
+	padding: 0 10px;
+	line-height: 32px;
 }
 
 #account {
@@ -45,6 +48,7 @@ nav a {
 header {
 	margin: 0 0 10px 0;
 	width: auto;
+	padding-top: 42px;
 }
 header #logo-above {
 	margin-top: 0;
