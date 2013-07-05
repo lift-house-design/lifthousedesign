@@ -1,4 +1,4 @@
-<div class="services">
+<div id="services" class="services">
 	<div class="left section">
 		<h3>Trail Map</h3>
 		<p>Where are you going?</p>
@@ -36,7 +36,7 @@ Print Design | Info Graphics | Animation | Photography | Videography</p>
 
 
 <?php if(!empty($portfolio)): ?>
-<h2 class="latest">Just a Few of Our Latest</h2>
+<h2 id="portfolio" class="latest">Just a Few of Our Latest</h2>
 <div id="latest">
 <?php foreach($portfolio as $work): ?>
 	<a href="<?php echo site_url('site/portfolio_details/'.$work['id']) ?>" class="work">
@@ -48,7 +48,7 @@ Print Design | Info Graphics | Animation | Photography | Videography</p>
 </div>
 <?php endif; ?>
 
-<h2 class="love">We Love What We Do</h2>
+<h2 id="about-us" class="love">We Love What We Do</h2>
 <p>The following is provided as an offering to the SEO gods in hopes of their blessing. That is not to say, however, that there isn’t some good readin’ here…</p>
 <p>Do you own a web domain? Are you are thinking about buying a creative domain name that you have had your eye on?</p>
 <p>In either case, you should consider the following:</p>
@@ -68,7 +68,7 @@ Print Design | Info Graphics | Animation | Photography | Videography</p>
 	<li>Automates business functions and/or processes</li>
 </ul>
 <p>Ask us how we can help with your project today!</p>
-<h2 class="quote">A Quote, A Question, A Comment</h2>
+<h2 id="quote" class="quote">A Quote, A Question, A Comment</h2>
 <form id="quote-form" method="post" action="/">
 	<?php if($this->input->post('send_quote')): ?>
 		<?php if(!empty($notifications)): ?>

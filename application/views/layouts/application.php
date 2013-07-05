@@ -19,10 +19,10 @@
 	<div id="main-outer-wrapper">
 		<div class="wrapper">
 			<nav>
-				<?php echo anchor('services','Services','class="services"') ?>
-				<?php echo anchor('portfolio','Portfolio','class="portfolio"') ?>
-				<?php echo anchor('about-us','About Us','class="about-us"') ?>
-				<?php echo anchor('quote','Quote','class="quote"') ?>
+				<a class="services" href="#services">Services</a>
+				<a class="portfolio" href="#portfolio">Portfolio</a>
+				<a class="about-us" href="#about-us">About Us</a>
+				<a class="quote" href="#quote">Quote</a>
 				<?php if($logged_in): ?>
 					<?php echo anchor('dashboard','Dashboard','class="dashboard"') ?>
 					<?php echo anchor('logout','Log Out','class="logout"') ?>

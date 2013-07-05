@@ -40,7 +40,6 @@ $(function(){
 	if(messages.length>0)
 	{
 		var offset=messages.offset();
-		console.log(offset);
 		$('html, body').animate({
 			scrollTop: offset.top,
 		},{
@@ -48,11 +47,11 @@ $(function(){
 		});
 	}
 
-	$('nav a:not(.login, .dashboard), #footer-bottom a').fancybox({
+	/*$('nav a:not(.login, .dashboard), #footer-bottom a').fancybox({
 		type: 'ajax',
 		autoWidth: false,
 		width: 400,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-	});
+	});*/
 	/*$('nav a.login').click(function(){
 		if($('#login:visible').length)
 		{
@@ -73,14 +72,6 @@ $(function(){
 			});
 		}
 	});*/
-	$('nav a.login').click(function(){
-		$('#login')
-			.show()
-			.toggleClass('visible');
-
-		if($('#login').hasClass('visible'))
-			$('#login input[name="email"]').focus();
-	});
 
 	$('#latest .work').fancybox({
 		type: 'ajax', 
