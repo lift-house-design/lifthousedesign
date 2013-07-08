@@ -1,5 +1,6 @@
 $(function(){
 	$('.phone').mask('(999) 999-9999');
+	
 	$('.url').change(function(){
 		var val=$.trim($(this).val());
 		if(val!='' && val.substring(0,7)!='http://' && val.substring(0,8)!='https://')
@@ -8,6 +9,7 @@ $(function(){
 			$(this).val(newVal);
 		}
 	});
+
 	$('#quote-form').validate({
 		rules: {
 			name: {
@@ -46,32 +48,6 @@ $(function(){
 			duration: 1000,
 		});
 	}
-
-	/*$('nav a:not(.login, .dashboard), #footer-bottom a').fancybox({
-		type: 'ajax',
-		autoWidth: false,
-		width: 400,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-	});*/
-	/*$('nav a.login').click(function(){
-		if($('#login:visible').length)
-		{
-			$('#login').animate({
-				opacity: 0,
-				top: '-100px'
-			},{
-				duration: 500
-			});
-		}
-		else
-		{
-			$('#login').animate({
-				opacity: 1,
-				top: '0px'
-			},{
-				duration: 500
-			});
-		}
-	});*/
 
 	$('#latest .work').fancybox({
 		type: 'ajax', 

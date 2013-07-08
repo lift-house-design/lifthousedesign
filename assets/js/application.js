@@ -9,26 +9,34 @@ $(function(){
 	var on_homepage=$('#services, #portfolio, #about-us, #quote').length==4;
 
 	// Define a scroll-to function, as it is used in more than one spot
-	function scroll_to_element(target)
+	function scroll_to_element(target_selector,callback)
 	{
 		if(on_homepage)
 		{
-			if($(target).length)
+			if($(target_selector).length)
 			{
-				var offset=$(target).offset();
+				var offset=$(target_selector).offset();
 
 				$('html, body').animate({
 					scrollTop: offset.top-10,
 				},{
 					duration: 1000,
 					easing: 'easeOutCirc',
+					complete: function(){
+						if(typeof callback=='function')
+							callback();
+					},
 				});
+
+				return true;
 			}
 		}
 		else
 		{
-			window.location.href='/'+target;
+			window.location.href='/'+target_selector;
 		}
+
+		return false;
 	}
 
 	// Find all links with an href beginning with hashtag
@@ -39,8 +47,10 @@ $(function(){
 		{
 			// Apply the scroll-to functionality
 			$(this).click(function(){
-				var target=$(this).attr('href');
-				scroll_to_element(target);
+				var target_selector=$(this).attr('href');
+				scroll_to_element(target_selector,function(){
+					
+				});
 			});
 		}
 	});

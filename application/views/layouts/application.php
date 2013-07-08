@@ -22,7 +22,7 @@
 				<a class="services" href="#services">Services</a>
 				<a class="portfolio" href="#portfolio">Portfolio</a>
 				<a class="about-us" href="#about-us">About Us</a>
-				<a class="quote" href="#quote">Quote</a>
+				<a class="quote" href="#quote" data-focus="#quote-form input[name='name']">Quote</a>
 				<?php if($logged_in): ?>
 					<?php echo anchor('dashboard','Dashboard','class="dashboard"') ?>
 					<?php echo anchor('logout','Log Out','class="logout"') ?>
