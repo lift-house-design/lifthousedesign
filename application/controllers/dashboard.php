@@ -23,8 +23,12 @@ class Dashboard extends App_Controller
 
 
 		//$this->data['projects']=$project_result;
-		$this->harvest->getClientProjects(0);
+		//$this->harvest->getClientProjects(0);
 		//var_dump(file_put_contents('/Users/nick/Desktop/testfile.txt','TESTDATAGOESHERE'));
+
+		$this->css[]='smoothness/jquery-ui-1.10.3.custom.min.css';
+		$this->js[]='jquery-ui-1.10.3.min.js';
+		$this->js[]='dashboard-index.js';
 	}
 }
 
