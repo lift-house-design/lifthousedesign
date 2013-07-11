@@ -396,6 +396,7 @@ nav a {
 	overflow: hidden;
 	text-align: center;
 }
+nav a:hover,
 nav a:visited {
 	color: #faf8f3;
 }
