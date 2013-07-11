@@ -8,7 +8,7 @@
 			array(
 				'field'=>'name',
 				'label'=>'Name',
-				'rules'=>'required|maxlength[64]',
+				'rules'=>'required|maxlength[64]', 
 			),
 			array(
 				'field'=>'company',
@@ -37,7 +37,7 @@
 			),
 		);
 		
-		public $before_create=array('created_at','send_email');
+		public $before_create=array('_filter_data','created_at','send_email');
 
 		protected function send_email($data)
 		{

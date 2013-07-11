@@ -16,7 +16,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div id="main-outer-wrapper">
+	<div id="nav-wrapper">
 		<div class="wrapper">
 			<nav>
 				<a class="services" href="#services">Services</a>
@@ -43,6 +43,10 @@
 					<?php echo form_submit('login','Log In') ?>
 				</form>
 			</div>
+		</div>
+	</div>
+	<div id="main-outer-wrapper">
+		<div class="wrapper">
 			<header>
 				<div id="logo-above">Web Design. Web Development. Web Innovation.</div>
 				<?php echo anchor('/',img(array(
@@ -77,18 +81,21 @@
 	<footer>
 		<div class="wrapper">
 			<div id="footer-top">
-				<?php echo anchor('#linked-in',img(array(
+				<?php echo anchor('#linkedin',img(array(
 					'src'=>asset('linkedin.png','img/layout'),
 				))) ?>
-				<?php echo anchor('#twitter',img(array(
+				<?php echo anchor('http://www.twitter.com/lifthousedesign',img(array(
 					'src'=>asset('twitter.png','img/layout'),
+					'target'=>'_blank',
 				))) ?>
 				<span id="check-us-out">...well check us out...</span>
-				<?php echo anchor('#facebook',img(array(
+				<?php echo anchor('http:/www.facebook.com/pages/Lift-House-Design/414101198659126',img(array(
 					'src'=>asset('facebook.png','img/layout'),
+					'target'=>'_blank',
 				))) ?>
-				<?php echo anchor('#google',img(array(
-					'src'=>asset('google.png','img/layout'),
+				<?php echo anchor('http://www.youtube.com/lifthousedesign',img(array(
+					'src'=>asset('youtube.png','img/layout'),
+					'target'=>'_blank',
 				))) ?>
 			</div>
 			<div id="footer-bottom">

@@ -38,7 +38,7 @@ class Site extends App_Controller
 		{
 			if($this->inquiry->insert($this->input->post()))
 			{
-				$this->set_notification('Your inquiry has been received. Please allow 24-48 hours for a response. Thank you!');
+				$this->set_notification('Thank you for contacting us. We will be in touch within the next 48 hours.');
 			}
 		}
 
@@ -54,6 +54,8 @@ class Site extends App_Controller
 	{
 		$this->layout=FALSE;
 		$this->data['work']=$this->portfolio->get($id);
+		$pathinfo=pathinfo($this->data['work']['url']);
+		$this->data['work']['display_url']=$pathinfo['basename'];
 	}
 
 	public function login()

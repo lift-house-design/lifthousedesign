@@ -52,4 +52,9 @@ $(function(){
 	$('#latest .work').fancybox({
 		type: 'ajax', 
 	});
+
+	$('#video-link').fancybox({
+		type: 'iframe',
+		padding: 0,
+	});
 });
