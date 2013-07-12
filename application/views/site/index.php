@@ -8,7 +8,7 @@
 	<div class="middle section">
 		<h3>Chair Lift</h3>
 		<p>Is your company "top-of-mind"?</p>
-		<p>Our chair lift provides the much needed maintenance, and upkeep it will take to get you there. This great package includes SEO, social media, advertising, analytics work. Get started today for only $49</p>
+		<p>Our chair lift provides the much needed maintenance it will take to get you there. This great package includes SEO, social media, advertising, and analytics work</p>
 		<p>$49 down/$49 per month</p>
 	</div>
 	<div class="right section">
