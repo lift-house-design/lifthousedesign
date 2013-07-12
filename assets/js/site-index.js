@@ -56,5 +56,6 @@ $(function(){
 	$('#video-link').fancybox({
 		type: 'iframe',
 		padding: 0,
+		closeBtn: false,
 	});
 });

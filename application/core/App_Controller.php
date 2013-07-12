@@ -91,6 +91,10 @@ class App_Controller extends CI_Controller
         
         $this->load->library('Mobile_Detect');
         $this->is_mobile=$this->mobile_detect->isMobile() && !$this->mobile_detect->isTablet();
+
+        if($this->input->get('mobile'))
+            $this->is_mobile=TRUE;
+
         if($this->is_mobile)
             $this->css[]='mobile.css';
     }

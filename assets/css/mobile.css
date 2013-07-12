@@ -2,88 +2,6 @@ p {
 	padding: 0 10px;
 }
 
-/*@-webkit-keyframes login-visible {
-	0% {
-		opacity: 0;
-		top: -100px;
-	}
-	100% {
-		opacity: 1;
-		top: 40px;
-	}
-}
-@-moz-keyframes login-visible {
-	0% {
-		opacity: 0;
-		top: -100px;
-	}
-	100% {
-		opacity: 1;
-		top: 40px;
-	}
-}
-@-o-keyframes login-visible {
-	0% {
-		opacity: 0;
-		top: -100px;
-	}
-	100% {
-		opacity: 1;
-		top: 40px;
-	}
-}
-@keyframes login-visible {
-	0% {
-		opacity: 0;
-		top: -100px;
-	}
-	100% {
-		opacity: 1;
-		top: 40px;
-	}
-}
-
-@-webkit-keyframes login-hidden {
-	0% {
-		opacity: 1;
-		top: 40px;
-	}
-	100% {
-		opacity: 0;
-		top: -100px;
-	}
-}
-@-moz-keyframes login-hidden {
-	0% {
-		opacity: 1;
-		top: 40px;
-	}
-	100% {
-		opacity: 0;
-		top: -100px;
-	}
-}
-@-o-keyframes login-hidden {
-	0% {
-		opacity: 1;
-		top: 40px;
-	}
-	100% {
-		opacity: 0;
-		top: -100px;
-	}
-}
-@keyframes login-hidden {
-	0% {
-		opacity: 1;
-		top: 40px;
-	}
-	100% {
-		opacity: 0;
-		top: -100px;
-	}
-}*/
-
 /*
 |--------------------------------------------------------------------------
 | Layout
@@ -97,6 +15,8 @@ body {
 
 #main-outer-wrapper {
 	min-width: 320px;
+	background-image: url(/assets/img/layout/bg-lines-mobile.png);
+	background-position: 0 85px;
 }
 
 .wrapper {
@@ -104,18 +24,8 @@ body {
 }
 
 nav {
-	/*float: none;
-	*zoom: 1;*/
 	line-height: 16px;
 }
-/*nav:before,
-nav:after {
-	content: " ";
-	display: table;
-}
-nav:after {
-	clear: both;
-}*/
 nav a {
 	font-size: 9px;
 	width: auto;
@@ -130,10 +40,11 @@ nav a {
 header {
 	margin: 0 0 10px 0;
 	width: auto;
-	padding-top: 42px;
+	padding-top: 57px;
 }
 header #logo-above {
 	margin-top: 0;
+	margin-bottom: 5px;
 	font-size: 11px;
 }
 header #logo img {

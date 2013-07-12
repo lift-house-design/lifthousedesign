@@ -27,7 +27,7 @@ Custom Website Interface Design</p>
 Web Design | Mobile First Design | Copy/Content Development | Branding | Logo Design<br />
 Print Design | Info Graphics | Animation | Photography | Videography</p>
 <div class="align-center">
-	<a id="video-link" href="http://player.vimeo.com/video/68054748?title=0&amp;byline=0&amp;portrait=0&amp;color=d9deb0"><img src="/assets/img/layout/videoimage.png" /></a>
+	<a id="video-link" href="http://player.vimeo.com/video/68054748?title=0&amp;byline=0&amp;portrait=0&amp;color=d9deb0&amp;autoplay=1"><img src="/assets/img/layout/videoimage.png" /></a>
 <!--
 <?php if($is_mobile): ?>
 	<iframe src="http://player.vimeo.com/video/68054748?title=0&amp;byline=0&amp;portrait=0&amp;color=d9deb0" width="300" height="165" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
