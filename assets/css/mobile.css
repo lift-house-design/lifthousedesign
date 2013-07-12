@@ -171,6 +171,12 @@ h2.quote {
 #latest .work {
 	margin: 5px;
 }
+#latest .work:first-child {
+	margin: 5px;
+}
+#latest .work:last-child {
+	margin: 5px;
+}
 
 #latest .work img {
 	width: 130px;
