@@ -83,20 +83,17 @@
 			<div id="footer-top">
 				<?php echo anchor('#linkedin',img(array(
 					'src'=>asset('linkedin.png','img/layout'),
-				))) ?>
+				)),'target="_blank"') ?>
 				<?php echo anchor('http://www.twitter.com/lifthousedesign',img(array(
 					'src'=>asset('twitter.png','img/layout'),
-					'target'=>'_blank',
-				))) ?>
+				)),'target="_blank"') ?>
 				<span id="check-us-out">...well check us out...</span>
 				<?php echo anchor('http://www.facebook.com/pages/Lift-House-Design/414101198659126',img(array(
 					'src'=>asset('facebook.png','img/layout'),
-					'target'=>'_blank',
-				))) ?>
+				)),'target="_blank"') ?>
 				<?php echo anchor('http://www.youtube.com/lifthousedesign',img(array(
 					'src'=>asset('youtube.png','img/layout'),
-					'target'=>'_blank',
-				))) ?>
+				)),'target="_blank"') ?>
 			</div>
 			<div id="footer-bottom">
 				<div id="copyright">Copyright &copy; <?php echo date('Y') ?> | Lift House Design</div>

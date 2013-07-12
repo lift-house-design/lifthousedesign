@@ -18,7 +18,7 @@ $(function(){
 				var offset=$(target_selector).offset();
 
 				$('html, body').animate({
-					scrollTop: offset.top-10,
+					scrollTop: offset.top-50,
 				},{
 					duration: 1000,
 					easing: 'easeOutCirc',
