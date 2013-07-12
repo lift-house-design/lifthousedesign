@@ -27,14 +27,7 @@ Custom Website Interface Design</p>
 Web Design | Mobile First Design | Copy/Content Development | Branding | Logo Design<br />
 Print Design | Info Graphics | Animation | Photography | Videography</p>
 <div class="align-center">
-	<a id="video-link" href="http://player.vimeo.com/video/68054748?title=0&amp;byline=0&amp;portrait=0&amp;color=d9deb0&amp;autoplay=1"><img src="/assets/img/layout/videoimage.png" /></a>
-<!--
-<?php if($is_mobile): ?>
-	<iframe src="http://player.vimeo.com/video/68054748?title=0&amp;byline=0&amp;portrait=0&amp;color=d9deb0" width="300" height="165" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-<?php else: ?>
-	<iframe src="http://player.vimeo.com/video/68054748?title=0&amp;byline=0&amp;portrait=0&amp;color=d9deb0" width="980" height="539" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-<?php endif; ?>
--->
+	<a id="video-link" href="http://player.vimeo.com/video/68054748?title=0&amp;byline=0&amp;portrait=0&amp;color=d9deb0&amp;autoplay=1"><img src="/assets/img/layout/videoimage<?php echo $is_mobile ? '-mobile' : '' ?>.png" /></a>
 </div>
 
 
@@ -52,7 +45,7 @@ Print Design | Info Graphics | Animation | Photography | Videography</p>
 <?php endif; ?>
 
 <h2 id="about-us" class="love">We Love What We Do</h2>
-<div class="well">
+<div id="about-us-content" class="well">
 	<p>The following is provided as an offering to the SEO gods in hopes of their blessing. That is not to say, however, that there isn’t some good readin’ here…</p>
 	<p>Do you own a web domain? Are you are thinking about buying a creative domain name that you have had your eye on?</p>
 	<p>In either case, you should consider the following:</p>

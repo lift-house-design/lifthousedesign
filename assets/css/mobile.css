@@ -25,12 +25,29 @@ body {
 
 nav {
 	line-height: 16px;
+	overflow: hidden;
 }
 nav a {
 	font-size: 9px;
-	width: auto;
-	padding: 0 10px;
-	line-height: 32px;
+	width: 64px;
+	line-height: 40px;
+}
+nav a.services:hover {
+	background: #d9deb0;
+}
+nav a.portfolio:hover {
+	background: #abc4a4;
+}
+nav a.about-us:hover {
+	background: #528a7f;
+}
+nav a.quote:hover {
+	background: #425555;
+}
+nav a.login:hover,
+nav a.dashboard:hover,
+nav a.logout:hover {
+	background: #333132;
 }
 
 #account {
@@ -52,6 +69,7 @@ header #logo img {
 }
 header #logo-below {
 	font-size: 13px;
+	margin-bottom: 20px;
 }
 
 footer {
@@ -91,22 +109,27 @@ footer #footer-bottom #links a {
 	display: none;
 }
 
+.well {
+	-webkit-box-shadow: inset .5px .5px 5px 1px rgba(0, 0, 0, .2);
+	box-shadow: inset .5px .5px 5px 1px rgba(0, 0, 0, .2);
+}
+
 /*
 |--------------------------------------------------------------------------
 | Homepage
 |--------------------------------------------------------------------------
 */
 
-#site-index .services {
+div.services {
 	width: 300px;
 	margin: 0 auto;
 	height: auto;
 	position: static;
 	background: none;
 }
-#site-index .services .left,
-#site-index .services .middle,
-#site-index .services .right {
+div.services .left,
+div.services .middle,
+div.services .right {
 	position: static;
 	height: auto;
 	width: 280px;
@@ -115,45 +138,45 @@ footer #footer-bottom #links a {
 	background: url(/assets/img/layout/services-bg-mobile.jpg) center bottom no-repeat #fcf9f4;
 	margin-bottom: 10px;
 }
-#site-index .services .left h3,
-#site-index .services .middle h3,
-#site-index .services .right h3 {
+div.services .left h3,
+div.services .middle h3,
+div.services .right h3 {
 	font-size: 20px;
 }
 
-#site-index h2.gear,
-#site-index h2.latest,
-#site-index h2.love,
-#site-index h2.quote {
+h2.gear,
+h2.latest,
+h2.love,
+h2.quote {
 	margin: 30px auto 10px auto;
 	width: 300px;
-	height: 46px;
-	background: url(/assets/img/layout/icons-mobile.png) center top no-repeat;
+	height: 51.25px;
+	background: url(/assets/img/layout/icons2-mobile.png) center top no-repeat;
 	text-indent: -9999px;
 }
 
-#site-index h2.gear {
+h2.gear {
 	background-position-y: 0px;
 }
-#site-index h2.latest {
-	background-position-y: -46px;
+h2.latest {
+	background-position-y: -51.25px;
 }
-#site-index h2.love {
-	background-position-y: -92px;
+h2.love {
+	background-position-y: -102.5px;
 }
-#site-index h2.quote {
-	background-position-y: -138px;
+h2.quote {
+	background-position-y: -153.75px;
 }
 
-#site-index #latest .work {
+#latest .work {
 	margin: 5px;
 }
 
-#site-index #latest .work img {
+#latest .work img {
 	width: 130px;
-	height: 108px;
+	height: 130px;
 }
-#site-index #latest .work .caption {
+#latest .work .caption {
 	opacity: 1;
 	bottom: 0;
 	line-height: 22px;
@@ -164,7 +187,7 @@ footer #footer-bottom #links a {
 	animation: none;
 }
 
-#site-index #latest .work:hover .caption {
+#latest .work:hover .caption {
 	-webkit-animation: none;
 	-moz-animation: none;
 	-o-animation: none;
@@ -181,7 +204,7 @@ footer #footer-bottom #links a {
 }
 #work-details .float-left img {
 	width: 130px;
-	height: 108px;
+	height: 130px;
 }
 #work-details .float-left a {
 	
@@ -190,17 +213,27 @@ footer #footer-bottom #links a {
 	float: none;
 	margin-left: 0;
 	width: auto;
-}
-#work-details .float-right h3 {
 	text-align: center;
 }
 
-#site-index #quote-form {
+#about-us-content {
+	width: 260px;
+	margin: 0 auto;
+}
+
+#quote-form {
+	width: 260px;
+	margin-bottom: 30px;
+}
+#quote-form > .font-oleo-script-swash-caps {
+	font-size: 16px;
+}
+#quote-form .clear .float-left,
+#quote-form .clear .float-right {
+	float: none;
 	width: auto;
 }
-#site-index #quote-form .float-left {
-	float: none;
-}
-#site-index #quote-form .float-right {
-	float: none;
+#quote-form .clear .float-left input[type="text"],
+#quote-form .clear .float-right textarea {
+	width: 245px;
 }
