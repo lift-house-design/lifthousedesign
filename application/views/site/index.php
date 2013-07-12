@@ -7,9 +7,9 @@
 	</div>
 	<div class="middle section">
 		<h3>Chair Lift</h3>
-		<p>How will you get there?</p>
-		<p>Our chair lift provides you with an inexpensive hourly rate. From branding to color schemes and everywhere in between. We've got what you need</p>
-		<p>$75/Hr</p>
+		<p>Is your company "top-of-mind"?</p>
+		<p>Our chair lift provides the much needed maintenance, and upkeep it will take to get you there. This great package includes SEO, social media, advertising, analytics work. Get started today for only $49</p>
+		<p>$49 down/$49 per month</p>
 	</div>
 	<div class="right section">
 		<h3>Gondola</h3>
@@ -38,7 +38,7 @@ Print Design | Info Graphics | Animation | Photography | Videography</p>
 	<a href="<?php echo site_url('site/portfolio_details/'.$work['id']) ?>" class="work">
 	<!--a class="work"-->
 		<?php echo img($work['image']) ?>
-		<span class="caption"><?php echo $work['name'] ?></span>
+		<span class="caption">Learn More</span>
 	</a>
 <?php endforeach; ?>
 </div>
