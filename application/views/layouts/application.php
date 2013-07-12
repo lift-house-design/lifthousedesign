@@ -89,7 +89,7 @@
 					'target'=>'_blank',
 				))) ?>
 				<span id="check-us-out">...well check us out...</span>
-				<?php echo anchor('http:/www.facebook.com/pages/Lift-House-Design/414101198659126',img(array(
+				<?php echo anchor('http://www.facebook.com/pages/Lift-House-Design/414101198659126',img(array(
 					'src'=>asset('facebook.png','img/layout'),
 					'target'=>'_blank',
 				))) ?>
