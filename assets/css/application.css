@@ -804,7 +804,7 @@ h2.quote {
 |--------------------------------------------------------------------------
 */
 
-#dashboard.ui-accordion .ui-accordion-header {
+/*#dashboard.ui-accordion .ui-accordion-header {
 	background: #333132;
 	border: 0;
 	color: #fff;
@@ -824,4 +824,13 @@ h2.quote {
 }
 #dashboard .ui-accordion-header-icon {
 	display: none;
+}*/
+
+#dashboard h2 {
+	font-family: "Croissant One",cursive;
+	text-transform: lowercase;
+}
+
+#dashboard h2.colorbar-1 {
+	
 }
