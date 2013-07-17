@@ -35,7 +35,7 @@ class App_Controller extends CI_Controller
      * An arbitrary list of asides/partials to be loaded into
      * the layout. The key is the declared name, the value the file
      */
-    protected $asides = array();
+    protected $asides = array('nav'=>'layouts/nav');
 
     /**
      * A list of models to be autoloaded

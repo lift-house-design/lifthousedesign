@@ -1,0 +1,61 @@
+/*
+|--------------------------------------------------------------------------
+| Helpers
+|--------------------------------------------------------------------------
+*/
+
+.align-left {
+	text-align: left;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.font-delius-unicase {
+	font-family: "Delius Unicase",cursive;
+	text-transform: uppercase;
+}
+
+.font-oleo-script-swash-caps {
+	font-family: "Oleo Script Swash Caps",cursive;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.clear:before,
+.clear:after {
+	content: " ";
+	display: table;
+}
+
+.clear:after {
+	clear: both;
+}
+
+.clear {
+	*zoom: 1;
+}
+
+.well {
+	background-color: #fdfbf7;
+	padding: 20px;
+	-webkit-box-shadow: inset 1px 1px 5px 1px rgba(0, 0, 0, .2);
+	box-shadow: inset 1px 1px 5px 1px rgba(0, 0, 0, .2);
+}
+.well > *:first-child {
+	margin-top: 0;
+}
+.well > *:last-child {
+	margin-bottom: 0;
+}

@@ -1,0 +1,65 @@
+/*
+|--------------------------------------------------------------------------
+| Modules
+|--------------------------------------------------------------------------
+*/
+
+.errors {
+	text-align: left;
+	font-size: 13px;
+	background-color: #ffdddd;
+	border: 1px solid #d90000;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.errors ul {
+	margin: 10px 0 0 0;
+	padding: 0 0 0 30px;
+	list-style: square;
+	font-weight: bold;
+}
+
+.info {
+	text-align: left;
+	font-size: 13px;
+	background-color: #cbcff6;
+	border: 1px solid #0014d9;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.info ul {
+	margin: 0;
+	padding: 0 0 0 30px;
+	list-style: square;
+	font-weight: bold;
+}
+
+.button {
+	background: lighten($darkgray,15%);
+	color: $cream_light;
+	display: inline-block;
+	padding: 5px 10px;
+	text-transform: uppercase;
+	font-size: 9px;
+	font-family: "Delius Unicase", cursive;
+	font-weight: bold;
+	cursor: pointer;
+	@include border-radius(5px);
+
+	&:hover {
+		color: $cream_light;
+		@include button-gradient(lighten($darkgray,15%),$darkgray);
+	}
+
+	&.primary {
+		background: $colorbar_color2;
+
+		&:hover {
+			@include button-gradient($colorbar_color2,darken($colorbar_color2,10%));
+		}
+	}
+}

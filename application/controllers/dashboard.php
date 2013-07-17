@@ -26,8 +26,21 @@ class Dashboard extends App_Controller
 		//$this->harvest->getClientProjects(0);
 		//var_dump(file_put_contents('/Users/nick/Desktop/testfile.txt','TESTDATAGOESHERE'));
 
-		$this->css[]='smoothness/jquery-ui-1.10.3.custom.min.css';
-		$this->js[]='jquery-ui-1.10.3.min.js';
+		//$this->css[]='smoothness/jquery-ui-1.10.3.custom.min.css';
+		//$this->js[]='jquery-ui-1.10.3.min.js';
+
+		// Switch nav for dashboard
+		$this->asides['nav']='layouts/nav_dashboard';
+
+		// Load dataTables
+		$this->js[]=array(
+			'file'=>'js/jquery.dataTables.min.js',
+			'type'=>'plugins/datatables',
+		);
+		$this->css[]=array(
+			'file'=>'css/jquery.dataTables.css',
+			'type'=>'plugins/datatables',
+		);
 		$this->js[]='dashboard-index.js';
 	}
 }
