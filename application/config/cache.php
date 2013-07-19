@@ -2,6 +2,6 @@
 
 $config['cache_dir'] = APPPATH.'cache/';
 
-$config['cache_default_expires'] = 60*10; // 10 minutes
+$config['cache_default_expires'] = 60*1; // 1 minutes
 
 ?>

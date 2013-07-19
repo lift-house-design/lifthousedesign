@@ -291,6 +291,56 @@ h2.quote {
 			&.center {
 				text-align: center;
 			}
+
+			&.right {
+				text-align: right;
+			}
+		}
+
+		
+
+		&#billing {
+			& > tbody > tr {
+				cursor: pointer;
+
+				&:hover {
+					background-color: $colorbar_color2;
+
+					& > td {
+						color: $cream_light;
+					}
+				}
+
+				&.billing-content {
+
+					&:hover {
+						background-color: transparent;
+						cursor: auto;
+					}
+
+					& > td {
+						color: $darkgray;
+						border-left: 5px solid $colorbar_color2_dark;
+						border-right: 5px solid $colorbar_color2_dark;
+						border-bottom: 5px solid $colorbar_color2_dark;
+						padding: 0;
+
+						thead td {
+							background-color: $colorbar_color2;
+							font-size: 10px;
+						}
+
+						tbody {
+							border-bottom: 0;
+						}
+					}
+				}
+
+				&.selected {
+					background-color: $colorbar_color2_dark;
+					color: $cream_light;
+				}
+			}
 		}
 	}
 }

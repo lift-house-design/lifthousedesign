@@ -2,6 +2,7 @@
 
 require_once('HarvestAPI.php');
 spl_autoload_register(array('HarvestAPI','autoload'));
+
 class Harvest extends HarvestAPI {
 	protected $_ci;
 
@@ -10,10 +11,8 @@ class Harvest extends HarvestAPI {
 		$this->_ci=get_instance();
 	}
 
-	public function getClientProjects($client_id)
+	public function get_projects_by_client($client_id)
 	{
-		//$this->_ci->cache->delete_all();
-
 		if(($harvest_projects=$this->_ci->cache->get('harvest-projects'))===FALSE)
 		{
 			$harvest_projects_result=$this->getProjects();
@@ -22,19 +21,20 @@ class Harvest extends HarvestAPI {
 				$harvest_projects=$harvest_projects_result->data;
 				$this->_ci->cache->write($harvest_projects,'harvest-projects');
 			}
-			else return FALSE;
+			else
+				return FALSE;
 		}
 
-		$client_projects=array();
+		$projects=array();
 
 		foreach($harvest_projects as $project_id=>$project)
 		{
 			if($project->get('client-id')==$client_id)
 			{
-				$client_projects[$project_id]=$project;
+				$projects[$project_id]=$project;
 			}
 		}
 
-		return $client_projects;
+		return $projects;
 	}
 }

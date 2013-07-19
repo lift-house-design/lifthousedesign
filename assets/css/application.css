@@ -348,6 +348,41 @@ a:visited {
       background: linear-gradient(to bottom, #abc4a4 50%, #8eb085 50%);
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$top-color', endColorstr='$bottom-color',GradientType=0 ); }
 
+.field {
+  width: 300px;
+  position: relative;
+  padding-bottom: 10px; }
+  .field > label {
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-family: "Delius Unicase",cursive;
+    font-weight: bold;
+    margin-bottom: 5px; }
+    .field > label.error {
+      position: absolute;
+      bottom: -10px;
+      right: 5px;
+      font-size: 9px;
+      color: #d90000; }
+  .field > input[type="text"], .field > input[type="password"], .field > textarea {
+    width: 97%; }
+    .field > input[type="text"].error, .field > input[type="password"].error, .field > textarea.error {
+      background-color: #ffdddd;
+      border: 1px solid #d90000; }
+  .field.w1, .field.w2, .field.w3 {
+    display: inline-block; }
+  .field.w1 {
+    width: 100%; }
+  .field.w2 {
+    width: 49%; }
+
+.buttons {
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #f5efe2;
+  border-top: 5px solid #3a3637; }
+
 /*
 |--------------------------------------------------------------------------
 | Layout
@@ -823,3 +858,28 @@ h2.quote {
     padding: 8px 16px; }
     #dashboard .dataTable td.center {
       text-align: center; }
+    #dashboard .dataTable td.right {
+      text-align: right; }
+  #dashboard .dataTable#billing > tbody > tr {
+    cursor: pointer; }
+    #dashboard .dataTable#billing > tbody > tr:hover {
+      background-color: #abc4a4; }
+      #dashboard .dataTable#billing > tbody > tr:hover > td {
+        color: #faf8f3; }
+    #dashboard .dataTable#billing > tbody > tr.billing-content:hover {
+      background-color: transparent;
+      cursor: auto; }
+    #dashboard .dataTable#billing > tbody > tr.billing-content > td {
+      color: #3a3637;
+      border-left: 5px solid #86ac84;
+      border-right: 5px solid #86ac84;
+      border-bottom: 5px solid #86ac84;
+      padding: 0; }
+      #dashboard .dataTable#billing > tbody > tr.billing-content > td thead td {
+        background-color: #abc4a4;
+        font-size: 10px; }
+      #dashboard .dataTable#billing > tbody > tr.billing-content > td tbody {
+        border-bottom: 0; }
+    #dashboard .dataTable#billing > tbody > tr.selected {
+      background-color: #86ac84;
+      color: #faf8f3; }

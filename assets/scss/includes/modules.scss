@@ -63,3 +63,58 @@
 		}
 	}
 }
+
+.field {
+	width: 300px;
+	position: relative;
+	padding-bottom: 10px;
+
+	& > label {
+		display: block;
+		font-size: 11px;
+		text-transform: uppercase;
+		font-family: "Delius Unicase",cursive;
+		font-weight: bold;
+		margin-bottom: 5px;
+
+		&.error {
+			position: absolute;
+			bottom: -10px;
+			right: 5px;
+			font-size: 9px;
+			color: #d90000;
+		}
+	}
+
+	& > input[type="text"],
+	& > input[type="password"],
+	& > textarea {
+		width: 97%;
+
+		&.error {
+			background-color: #ffdddd;
+			border: 1px solid #d90000;
+		}
+	}
+
+	&.w1,
+	&.w2,
+	&.w3 {
+		display: inline-block;
+	}
+
+	&.w1 {
+		width: 100%;
+	}
+
+	&.w2 {
+		width: 49%;
+	}
+}
+
+.buttons {
+	text-align: center;
+	padding: 10px 20px;
+	background-color: darken($cream_dark,3%);
+	border-top: 5px solid $darkgray;
+}
