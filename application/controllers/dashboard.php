@@ -105,6 +105,8 @@ class Dashboard extends App_Controller
 	{
 		// Get the harvest client ID
 		$harvest_client_id=$this->user->data['harvest_client_id'];
+		if(empty($harvest_client_id))
+			return array();
 
 		// Currently waiting on Harvest support to get back to me on this
 		return FALSE;
@@ -114,6 +116,8 @@ class Dashboard extends App_Controller
 	{
 		// Get the harvest client ID
 		$harvest_client_id=$this->user->data['harvest_client_id'];
+		if(empty($harvest_client_id))
+			return array();
 
 		// Get all invoices for this client
 		$cache_key='harvest-client-invoices-'.$harvest_client_id;
@@ -158,6 +162,8 @@ class Dashboard extends App_Controller
 	{
 		// Get the harvest client ID
 		$harvest_client_id=$this->user->data['harvest_client_id'];
+		if(empty($harvest_client_id))
+			return array();
 
 		// Get all projects for this client
 		$cache_key='harvest-client-projects-'.$harvest_client_id;
