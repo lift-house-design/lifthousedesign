@@ -25,7 +25,7 @@ $(function(){
 					complete: function(){
 						if(typeof callback=='function')
 							callback();
-					},
+					}
 				});
 
 				return true;

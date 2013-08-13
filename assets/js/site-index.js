@@ -14,28 +14,28 @@ $(function(){
 		rules: {
 			name: {
 				required: true,
-				maxlength: 64,
+				maxlength: 64
 			},
 			company: {
-				maxlength: 64,
+				maxlength: 64
 			},
 			website: {
 				url: true,
-				maxlength: 64,
+				maxlength: 64
 			},
 			email: {
 				required: true,
 				email: true,
-				maxlength: 32,
+				maxlength: 32
 			},
 			phone: {
 				phoneUS: true,
-				maxlength: 14,
+				maxlength: 14
 			},
 			project_info: {
-				required: true,
-			},
-		},
+				required: true
+			}
+		}
 	});
 
 	var messages=$('.errors, .info');
@@ -43,18 +43,18 @@ $(function(){
 	{
 		var offset=messages.offset();
 		$('html, body').animate({
-			scrollTop: offset.top,
+			scrollTop: offset.top
 		},{
-			duration: 1000,
+			duration: 1000
 		});
 	}
 
 	$('#latest .work').fancybox({
-		type: 'ajax', 
+		type: 'ajax'
 	});
 
 	$('#video-link').fancybox({
 		type: 'iframe',
-		padding: 0,
+		padding: 0
 	});
 });

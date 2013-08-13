@@ -3,7 +3,7 @@ $(function(){
 		bLengthChange: false,
 		bInfo: false,
 		bFilter: false,
-		bPaginate: false,
+		bPaginate: false
 	});
 
 	/*$('#billing').contentTable({
@@ -21,14 +21,14 @@ $(function(){
 		bLengthChange: false,
 		bInfo: false,
 		bFilter: false,
-		bPaginate: false,
+		bPaginate: false
 	});
 	
 	$('#projects').dataTable({
 		bLengthChange: false,
 		bInfo: false,
 		bFilter: false,
-		bPaginate: false,
+		bPaginate: false
 	});
 
 	$('.phone').mask('(999) 999-9999');
@@ -37,23 +37,23 @@ $(function(){
 		rules: {
 			first_name: {
 				required: true,
-				maxlength: 64,
+				maxlength: 64
 			},
 			last_name: {
 				required: true,
-				maxlength: 64,
+				maxlength: 64
 			},
 			company_name: {
-				maxlength: 64,
+				maxlength: 64
 			},
 			phone_number: {
 				phoneUS: true,
-				maxlength: 14,
+				maxlength: 14
 			},
 			fax_number: {
 				phoneUS: true,
-				maxlength: 14,
-			},
-		},
+				maxlength: 14
+			}
+		}
 	});
 });
