@@ -14,6 +14,9 @@
 	<link href='http://fonts.googleapis.com/css?family=Croissant+One' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Delius+Unicase' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps' rel='stylesheet' type='text/css'>
+	<!--[if lt IE 9]>
+		<script src="<?php echo asset('html5shiv.js','js') ?>"></script>
+	<![endif]-->
 </head>
 <body>
 	<?php echo $yield_nav ?>
