@@ -76,7 +76,7 @@ $config['site_description']='Your ascent to the summit begins here...';
 $config['title_format']='%1$s | %2$s';
 $config['copyright_format']='Copyright &copy; %1$s %2$d. All Rights Reserved.';
 $config['assets_url']='/assets';
-$config['ga_code']=FALSE;
+$config['ga_code']='UA-40034269-1';
 
 /*
 |--------------------------------------------------------------------------
