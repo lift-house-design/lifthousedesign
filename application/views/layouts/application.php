@@ -73,9 +73,9 @@
 			<div id="footer-bottom">
 				<div id="copyright">Copyright &copy; <?php echo date('Y') ?> | Lift House Design</div>
 				<div id="links">
-					<?php echo anchor('terms-of-use','Terms of Use') ?>
-					<?php echo anchor('privacy-policy','Privacy Policy') ?>
-					<?php echo anchor('contact-us','Contact Us') ?>
+					<?php echo anchor('terms-conditions','Terms and Conditions',array('class'=>'popup')) ?>
+					<?php echo anchor('privacy-policy','Privacy Policy',array('class'=>'popup')) ?>
+					<a href="#quote" data-focus="#quote-form input[name='name']">Contact Us</a>
 				</div>
 			</div>
 		</div>

@@ -79,6 +79,24 @@ class Site extends App_Controller
 		$this->set_notification('You have successfully logged out.');
 		redirect('/');
 	}
+
+	public function page()
+	{
+		$slug=str_replace('-','_',$this->uri->uri_string());
+
+		if(file_exists(APPPATH.'views/site/pages/'.$slug.'.php'))
+		{
+			$this->view='site/pages/'.$slug;
+			$this->layout=FALSE;
+		}
+		elseif(file_exists(APPPATH.'views/'.$slug.'.php'))
+		{
+			$this->view=$slug;
+			$this->layout=FALSE;
+		}
+		else
+			$this->view='site/not_found';
+	}
 }
 
 /* End of file site.php */

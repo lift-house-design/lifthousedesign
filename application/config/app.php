@@ -25,7 +25,7 @@ if($config['dev_mode']===TRUE)
 	$config['database']=array(
 		'hostname'=>'localhost',
 		'username'=>'root',
-		'password'=>'',
+		'password'=>'root',
 		'database'=>'lifthousedesign',
 		'dbdriver'=>'mysql',
 		'db_debug'=>$config['dev_mode'],
