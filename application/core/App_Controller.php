@@ -114,26 +114,18 @@ class App_Controller extends CI_Controller
         |
         */
         
-        // Set values that will be used more than once as vars
-        $site_name=$this->config->item('site_name');
-        $copyright=sprintf($this->config->item('copyright_format'),$site_name,date('Y'));
-        
-        // Get the default meta data
-        $meta=array(
-            'title'=>empty($this->title) ? $site_name : $this->title,
-            'description'=>$this->config->item('site_description'),
-            'copyright'=>str_replace(' &copy;','',$copyright),
-        );
-        // Overwrite the meta defaults if specified values exist
-        if(!empty($this->data['meta']) && is_array($this->data['meta']))
-            $meta=array_merge($meta,$this->data['meta']);
-        
+        // Get meta data
+        if(empty($this->data['meta']))
+            $this->data['meta'] = $this->config->item('meta');
+        else
+            $this->data['meta'] = array_merge($this->config->item('meta'), $this->data['meta']);
+        // hidden seo content
+        $this->data['seo_content'] = $this->config->item('seo_content');
+
         // Set the basic data
-        $this->data['meta']=$meta;
         $this->data['css']=$this->css;
         $this->data['js']=$this->js;
-        $this->data['title']=empty($this->title) ? $site_name : sprintf($this->config->item('title_format'),$site_name,$this->title);
-        $this->data['copyright']=$copyright;
+        $this->data['copyright'] = sprintf($this->config->item('copyright_format'),$this->config->item('site_name'),date('Y'));
         $this->data['ga_code']=$this->config->item('ga_code');
         $this->data['dev_mode']=$this->config->item('dev_mode');
         $this->data['is_mobile']=$this->is_mobile;
@@ -148,7 +140,6 @@ class App_Controller extends CI_Controller
         */
         
         // Set the global data
-        $this->data['site_name']=$site_name;
         $this->data['page_title']=$this->title;
         $this->data['slug_id_string']=implode('-',$this->uri->rsegment_array());
         $this->data['logged_in']=$this->user->logged_in;

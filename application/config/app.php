@@ -49,8 +49,7 @@ else
 | General Site Configuration
 |--------------------------------------------------------------------------
 |
-| 'site_name'			the name of the site to be used in the title bar and
-|						various other locations
+| 'site_name'			the name of the site [company name] used in copyright
 |
 | 'site_description'	a short description or tagline to be used as the
 |						default meta description and possibly other places
@@ -71,8 +70,11 @@ else
 |						to disable
 |
 */
-$config['site_name']='Lift House Design';
-$config['site_description']='Your ascent to the summit begins here...';
+$config['meta']['title'] = "Austin Local Web Design - Lift House Design";
+$config['meta']['description'] = "Austin TX Website Design, Graphic Design, Logo Design, Photography, Videography, Voice Talent, Internet Marketing, and SEO Services";
+$config['seo_content'] = '';
+
+$config['site_name'] = 'Lift House Design';
 $config['title_format']='%1$s | %2$s';
 $config['copyright_format']='Copyright &copy; %1$s %2$d. All Rights Reserved.';
 $config['assets_url']='/assets';

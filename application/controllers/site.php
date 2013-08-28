@@ -42,6 +42,8 @@ class Site extends App_Controller
 			}
 		}
 
+		$this->data['meta'] = $this->config->item('meta');
+
 		$this->data['portfolio']=$this->portfolio->get_all();
 	}
 
