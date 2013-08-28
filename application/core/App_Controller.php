@@ -115,12 +115,11 @@ class App_Controller extends CI_Controller
         */
         
         // Get meta data
-        if(empty($this->data['meta']))
-            $this->data['meta'] = $this->config->item('meta');
-        else
-            $this->data['meta'] = array_merge($this->config->item('meta'), $this->data['meta']);
+        $this->data['meta'] = empty($this->data['meta']) ? $this->config->item('meta') : array_merge($this->config->item('meta'), $this->data['meta']);
+
         // hidden seo content
-        $this->data['seo_content'] = $this->config->item('seo_content');
+        if(empty($this->data['seo_content']))
+            $this->data['seo_content'] = $this->config->item('seo_content');
 
         // Set the basic data
         $this->data['css']=$this->css;

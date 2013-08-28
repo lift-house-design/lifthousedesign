@@ -735,6 +735,11 @@ h2.quote {
 .fancybox-skin {
   background-color: #f9f5ed !important; }
 
+#seo-content {
+  height:0px;
+  overflow:hidden;
+}
+
 #work-details {
   padding: 20px;
   width: 560px;
