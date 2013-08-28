@@ -9,7 +9,7 @@
 |
 |--------------------------------------------------------------------------
 */
-$config['dev_mode']=TRUE;
+$config['dev_mode']=FALSE;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,7 +36,7 @@ else
 	$config['database']=array(
 		'hostname'=>'localhost',
 		'username'=>'thomas',
-		'password'=>'iotaalpha08',
+		'password'=>'Dsb6Zf3npPi8',
 		'database'=>'thomas_lhd',
 		'dbdriver'=>'mysql',
 		'db_debug'=>$config['dev_mode'],
