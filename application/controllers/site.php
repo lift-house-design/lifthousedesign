@@ -9,6 +9,14 @@ class Site extends App_Controller
 			'portfolio',
 		));
 
+		$this->data['seo_content'] = '
+			<a href="http://lifthousedesign.com/site/web_development">Web Development</a>
+			<a href="http://lifthousedesign.com/site/website_design">Website Design</a>
+			<a href="http://lifthousedesign.com/site/search_engine_optimization">Search Engine Optimization</a>
+			<a href="http://lifthousedesign.com/site/graphic_design">Graphic Design</a>
+			<a href="http://lifthousedesign.com/site/photography">Photography</a>
+			<a href="http://lifthousedesign.com/site/videography">Videography</a>';
+
 		parent::__construct();
 	}
 
@@ -41,14 +49,6 @@ class Site extends App_Controller
 				$this->set_notification('Thank you for contacting us. We will be in touch within the next 48 hours.');
 			}
 		}
-
-		$this->data['seo_content'] = '
-			<a href="http://lifthousedesign.com/site/web_development">Web Development</a>
-			<a href="http://lifthousedesign.com/site/website_design">Website Design</a>
-			<a href="http://lifthousedesign.com/site/search_engine_optimization">Search Engine Optimization</a>
-			<a href="http://lifthousedesign.com/site/graphic_design">Graphic Design</a>
-			<a href="http://lifthousedesign.com/site/photography">Photography</a>
-			<a href="http://lifthousedesign.com/site/videography">Videography</a>';
 
 		$this->data['portfolio']=$this->portfolio->get_all();
 	}
