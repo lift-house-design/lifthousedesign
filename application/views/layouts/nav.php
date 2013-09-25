@@ -1,6 +1,7 @@
 <div id="nav-wrapper">
 		<div class="wrapper">
 			<nav>
+				<a class="top" href="#top">Top</a>
 				<a class="services" href="#services">Services</a>
 				<a class="portfolio" href="#portfolio">Portfolio</a>
 				<a class="about-us" href="#about-us">About Us</a>

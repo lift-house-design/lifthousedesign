@@ -18,6 +18,7 @@
 	<![endif]-->
 </head>
 <body>
+	<div id="top"></div>
 	<?php echo $yield_nav ?>
 	<div id="seo-content"><?=$seo_content?></div>
 	<div id="main-outer-wrapper">

@@ -88,4 +88,17 @@ console.log(href);
 	$('a.popup').fancybox({
 		type: 'ajax'
 	});
+
+	// scroll to top hide/show
+	$(window).scroll(function() {
+	    if ($(this).scrollTop()) {
+	        $('nav a.top:hidden').stop(true, true).fadeIn();
+	    } else {
+	        $('nav a.top').stop(true, true).fadeOut();
+	    }
+	});
+	//initial
+	if ($(this).scrollTop()) {
+		$('nav a.top:hidden').stop(true, true).fadeIn();
+	}
 });

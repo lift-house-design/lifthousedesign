@@ -472,6 +472,22 @@ nav a:hover,
 nav a:visited {
   color: #faf8f3; }
 
+nav a.top {
+  display:none;
+  background-color: #f1f5d5;
+  color:rgb(58, 54, 55); }
+
+nav a.top:hover {
+  background: #f1f5d5;
+  background: -moz-linear-gradient(top, #f1f5d5 50%, #e1e5c5 50%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #f1f5d5), color-stop(50%, #e1e5c5));
+  background: -webkit-linear-gradient(top, #f1f5d5 50%, #e1e5c5 50%);
+  background: -o-linear-gradient(top, #f1f5d5 50%, #e1e5c5 50%);
+  background: -ms-linear-gradient(top, #f1f5d5 50%, #e1e5c5 50%);
+  background: linear-gradient(to bottom, #f1f5d5 50%, #e1e5c5 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f1f5d5', endColorstr='#e1e5c5',GradientType=0 ); }
+
+
 nav a.services {
   background-color: #d9deb0; }
 
