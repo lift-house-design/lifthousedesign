@@ -23,6 +23,9 @@
 						'name'=>'password',
 						'placeholder'=>'Password',
 					)) ?>
+					<a href="javascript:void(0)" style="text-decoration:none;float:left;margin:8px 0 0 7px;font-size:12px;color:white;">
+						<i>forgot password?</i>
+					</a>
 					<?php echo form_submit('login','Log In') ?>
 				</form>
 			</div>

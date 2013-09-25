@@ -582,10 +582,14 @@ nav a.logout:hover {
   -o-animation: login-visible .5s;
   animation: login-visible .5s; }
 
+#login input{
+  font-family: Thonburi,Verdana,sans-serif;
+}
 #login input[type="text"],
 #login input[type="password"] {
   width: 190px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px; 
+}
 
 header {
   padding-top: 40px;
