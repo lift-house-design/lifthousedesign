@@ -12,8 +12,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Croissant+One' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Delius+Unicase' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps' rel='stylesheet' type='text/css'>
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" type="image/png" href="/assets/img/favicon.png" />
 	<!--[if lt IE 9]>
 		<script src="<?php echo asset('html5shiv.js','js') ?>"></script>
 	<![endif]-->
