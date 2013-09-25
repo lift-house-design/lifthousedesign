@@ -9,7 +9,10 @@
 |
 |--------------------------------------------------------------------------
 */
-$config['dev_mode']=FALSE;
+if(stripos($_SERVER['HTTP_HOST'],'local.'))
+	$config['dev_mode'] = true;
+else
+	$config['dev_mode'] = false;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +23,7 @@ $config['dev_mode']=FALSE;
 |
 |--------------------------------------------------------------------------
 */
-if($config['dev_mode']===TRUE)
+if($config['dev_mode'])
 {
 	$config['database']=array(
 		'hostname'=>'localhost',

@@ -12,6 +12,8 @@
 	<link href='http://fonts.googleapis.com/css?family=Croissant+One' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Delius+Unicase' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<!--[if lt IE 9]>
 		<script src="<?php echo asset('html5shiv.js','js') ?>"></script>
 	<![endif]-->
@@ -20,16 +22,18 @@
 	<?php echo $yield_nav ?>
 	<div id="seo-content"><?=$seo_content?></div>
 	<div id="main-outer-wrapper">
+		<div id="title-wrapper">
+			<div id="logo-above"><h2>A full service web agency</h2></div>
+			<div id="logo-wrapper">
+				<div id="logo">
+					<a href="/" title="Lift Hosue Design">
+						<img src="/assets/img/layout/logo.png"/ alt="Lift House Design">
+					</a>
+					<div id="logo-below">Your ascent to the summit begins here...</div>
+				</div>
+			</div>
+		</div>
 		<div class="wrapper">
-			<header>
-				<div id="logo-above">Web Design. Web Development. Web Innovation.</div>
-				<?php echo anchor('/',img(array(
-					'src'=>asset('logo.png','img/layout'),
-					'alt'=>'Lift House Design',
-					'title'=>'Lift House Design',
-				)),'id="logo"') ?>
-				<div id="logo-below">Your ascent to the summit begins here...</div>
-			</header>
 			<div id="<?php echo $slug_id_string ?>">
 				<?php if($slug_id_string!='site-index'): ?>
 					<?php if(!empty($notifications)): ?>

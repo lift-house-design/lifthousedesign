@@ -1,21 +1,35 @@
 <div class="services">
 	<div class="left section">
-		<h3>Trail Map</h3>
+		<h3>Defining your goals</h3>
 		<p>Where are you going?</p>
-		<p>Our free consultation will provide you with the trail map needed to take your business straight to the summit</p>
-		<p>Free</p>
+		<p>
+			Good sites are born from good wireframes.
+			With your goals in mind, we will create a comprehensive wireframe of your site.
+		</p>
+		<p><a href="javascript:void(0)">Learn More</a></p>
 	</div>
 	<div class="middle section">
 		<h3>Chair Lift</h3>
-		<p>Is your company "top-of-mind"?</p>
-		<p>Our chair lift provides the much needed maintenance it will take to get you there. This great package includes SEO, social media, advertising, and analytics work</p>
-		<p>$49 down/$49 per month</p>
+		<p>Stand out from the crowd</p>
+		<p>
+			Let your customers know who you are and what services you offer.
+			<br/><br/>
+			Explainer videos
+			<br/><br/>
+			Infographics
+			<br/><br/>
+			Branding and more...	
+		</p>
+		<p><a href="javascript:void(0)">Learn More</a></p>
 	</div>
 	<div class="right section">
 		<h3>Gondola</h3>
 		<p>Tackle the summit</p>
-		<p>Time to translate all those hours of preparation into execution. We guarantee your custom build will fulfill all of your needs</p>
-		<p>Get a Quote</p>
+		<p>
+			Our goal is to streamline your business with web based automation.
+			Our expertise in back-office business automation will save you both time and money.
+		</p>
+		<p><a href="javascript:void(0)">Learn More</a></p>
 	</div>
 </div>
 
