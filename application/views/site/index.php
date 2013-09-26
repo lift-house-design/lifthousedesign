@@ -1,7 +1,7 @@
 <div class="services">
 	<div class="left section">
-		<h3>Defining your goals</h3>
-		<p>Where are you going?</p>
+		<h3>Trail Map</h3>
+		<p>Defining your goals</p>
 		<p>
 			Good sites are born from good wireframes.
 			With your goals in mind, we will create a comprehensive wireframe of your site.
@@ -11,13 +11,12 @@
 	<div class="middle section">
 		<h3>Chair Lift</h3>
 		<p>Stand out from the crowd</p>
+		<p>Let your customers know who you are and what services you offer.</p>
 		<p>
-			Let your customers know who you are and what services you offer.
-			<br/><br/>
 			Explainer videos
-			<br/><br/>
+			<br/>
 			Infographics
-			<br/><br/>
+			<br/>
 			Branding and more...	
 		</p>
 		<p><a href="javascript:void(0)">Learn More</a></p>

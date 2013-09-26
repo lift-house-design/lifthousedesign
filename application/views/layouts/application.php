@@ -23,7 +23,7 @@
 	<div id="seo-content"><?=$seo_content?></div>
 	<div id="main-outer-wrapper">
 		<div id="title-wrapper">
-			<div id="logo-above"><h2>A full service web agency</h2></div>
+			<div id="logo-above"><h3>A full service web agency</h3></div>
 			<div id="logo-wrapper">
 				<div id="logo">
 					<a href="/" title="Lift Hosue Design">

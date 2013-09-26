@@ -9,7 +9,7 @@
 |
 |--------------------------------------------------------------------------
 */
-if(stripos($_SERVER['HTTP_HOST'],'local.'))
+if(stripos($_SERVER['HTTP_HOST'],'local.') !== false)
 	$config['dev_mode'] = true;
 else
 	$config['dev_mode'] = false;
@@ -30,7 +30,7 @@ if($config['dev_mode'])
 		'username'=>'root',
 		'password'=>'root',
 		'database'=>'lifthousedesign',
-		'dbdriver'=>'mysql',
+		'dbdriver'=>'mysqli',
 		'db_debug'=>$config['dev_mode'],
 	);
 }
@@ -41,7 +41,7 @@ else
 		'username'=>'thomas',
 		'password'=>'Dsb6Zf3npPi8',
 		'database'=>'thomas_lhd',
-		'dbdriver'=>'mysql',
+		'dbdriver'=>'mysqli',
 		'db_debug'=>$config['dev_mode'],
 	);
 }
