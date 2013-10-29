@@ -1,5 +1,6 @@
 <?php header("Status: 403"); exit("Access denied."); ?>
 ---
+<? if(stripos($_SERVER['HTTP_HOST'],'local.') !== false){ ?>
 sql: 
   host: "localhost"
   username: "root"
@@ -7,10 +8,22 @@ sql:
   database: "lifthousedesign"
   prefix: "blog_"
   adapter: "mysql"
-name: "Lift House Blog"
-description: "Lift House Design"
 url: "http://local.lifthousedesign.com/blog"
 chyrp_url: "http://local.lifthousedesign.com/blog"
+<? }else{ ?>
+sql: 
+  host: "localhost"
+  username: "thomas"
+  password: "Dsb6Zf3npPi8"
+  database: "thomas_lhd"
+  prefix: "blog_"
+  adapter: "mysql"
+url: "http://lifthousedesign.com/blog"
+chyrp_url: "http://lifthousedesign.com/blog"
+<? } ?>
+
+name: "Lift House Blog"
+description: "Lift House Design"
 email: "bain.lifthousedesign@gmail.com"
 timezone: "America/Chicago"
 locale: "en_US"
