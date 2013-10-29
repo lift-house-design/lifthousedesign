@@ -111,7 +111,7 @@ $config['email_notifications']=array(
 		'inquiry'=>array(
 			'subject'=>'Inquiry Received via lifthousedesign.com',
 			'message'=>file_get_contents(dirname(__FILE__).'/templates/email/inquiry.php'),
-			'to'=>'nick@mvbeattie.com',
+			'to'=>'bain.lifthousedesign@gmail.com',
 		),
 	),
 );
