@@ -13,7 +13,7 @@
 			array(
 				'field'=>'company',
 				'label'=>'Company',
-				'rules'=>'alpha_numeric|maxlength[64]',
+				'rules'=>'maxlength[64]',
 			),
 			array(
 				'field'=>'website',
