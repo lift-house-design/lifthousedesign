@@ -43,7 +43,7 @@ $(function(){
 	}
 
 	// Find all links with an href beginning with hashtag
-	$('nav a').each(function(){
+	$('a').each(function(){
 		var href=$(this).attr('href');
 
 		if(href && href[0]=='#')

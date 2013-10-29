@@ -18,16 +18,15 @@
 	<![endif]-->
 </head>
 <body>
-	<div id="top"></div>
+	<div id="top" class="spacer50"></div>
 	<?php echo $yield_nav ?>
 	<div id="seo-content"><?=$seo_content?></div>
 	<div id="main-outer-wrapper">
 		<div id="title-wrapper">
-			<div id="logo-above"><h3>A full service web agency</h3></div>
 			<div id="logo-wrapper">
 				<div id="logo">
-					<a href="/" title="Lift Hosue Design">
-						<img src="/assets/img/layout/logo.png"/ alt="Lift House Design">
+					<a href="/" title="Lift House Design">
+						<img src="/assets/img/NEWlogo.png"/ alt="Lift House Design">
 					</a>
 					<div id="logo-below">Your ascent to the summit begins here...</div>
 				</div>

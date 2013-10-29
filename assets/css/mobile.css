@@ -1,40 +1,4 @@
-@media screen and (max-width:320px) {
-	*{
-		max-width:320px;
-	}
-	#main-outer-wrapper,
-	.wrapper,
-	header,
-	footer {
-		min-width: 320px;
-		width: 320px;
-	}
-	#logo a img{
-		width:260px;
-	}
-	#logo-wrapper{
-		background-size:1px 40px;
-	}
-	h2.gear,
-	h2.latest,
-	h2.love,
-	h2.quote,
-	div.services {
-		width: 300px;
-	}
-	div.services .left,
-	div.services .middle,
-	div.services .right,
-	div.section,
-	#about-us-content,
-	#quote-form  {
-		width: 280px;
-	}
-	#latest .work img {
-		width: 140px;
-		height: 140px;
-	}
-}
+/*
 @media screen and (min-width:321px) and (max-width:480px) {
 	*{
 		max-width:480px;
@@ -71,10 +35,68 @@
 		margin:10px auto;
 	}
 }
-@media screen and (min-width:481px) and (max-width:640px) {
+*/
+@media screen and (max-width:640px) {
 	*{
 		max-width:640px;
 	}
+
+	.home-content,
+	.home-content-clear,
+	.home-content-no-border{
+		margin-left:10px;
+		margin-right:10px;
+		width:auto;
+		padding:10px;
+	}
+
+	#employees{
+		width:600px;
+	}
+
+	.employee-img{
+		width:140px;
+	  	height:140px;
+	}
+
+	#ddd-graphics{
+	  position:relative;
+	  border:2px solid rgb(171, 196, 164);;
+	  margin:30px auto 60px;
+	  border-bottom:0px;
+	  width:402px;
+	  height:180px;
+	  text-align:center;
+	  overflow:visible;
+	}
+
+	#ddd-img-wrap{
+	  width:624px;
+	  position:absolute;
+	  left:50%;
+	  margin-left:-314px;
+	  top:60px
+	}
+
+	#ddd-img-wrap img{
+		width:197px;
+	}
+
+	#ddd-center-line{
+	  position:absolute;
+	  top:42px;
+	  left:201px;
+	  height:25px;
+	  border-left:2px solid rgb(171, 196, 164);;
+	}
+
+	#ddd-banner{
+	  position:relative;
+	  top:-37px;
+	  width:400px;
+	}
+
+
 	#main-outer-wrapper,
 	.wrapper,
 	header,
@@ -123,7 +145,6 @@
 		font-size: 9px;
 		width: 16.66%;
 		line-height: 40px;
-		
 	}
 
 	html,
@@ -179,7 +200,7 @@
 	h2.latest,
 	h2.love,
 	h2.quote {
-		margin: 30px auto 10px auto;
+		margin: 0px auto;
 		height: 51.25px;
 		background: url(/assets/img/layout/icons2-mobile.png) center top no-repeat;
 		text-indent: -9999px;
@@ -268,4 +289,99 @@
 		width: 245px;
 	}
 
+}
+
+@media screen and (max-width:320px) {
+	*{
+		max-width:320px;
+	}
+
+	#contact-us-floater{
+		width:50px;
+	}
+
+	#employees{
+		width:300px;
+	}
+
+	#employees td{
+		padding:5px;
+	}
+
+	.employee-img{
+		width:70px;
+	  	height:70px;
+	}
+
+	#ddd-graphics{
+	  position:relative;
+	  border:2px solid rgb(171, 196, 164);;
+	  margin:-20px auto 20px;
+	  border-bottom:0px;
+	  width:201px;
+	  height:90px;
+	  text-align:center;
+	  overflow:visible;
+	}
+
+	#ddd-img-wrap{
+	  width:314px;
+	  position:absolute;
+	  left:50%;
+	  margin-left:-158px;
+	  top:30px
+	}
+
+	#ddd-img-wrap img{
+		width:97px;
+	}
+
+	#ddd-center-line{
+	  position:absolute;
+	  top:21px;
+	  left:100.5px;
+	  height:12.5px;
+	  border-left:2px solid rgb(171, 196, 164);;
+	}
+
+	#ddd-banner{
+	  position:relative;
+	  top:-19px;
+	  width:200px;
+	}
+
+	#main-outer-wrapper,
+	.wrapper,
+	header,
+	footer {
+		min-width: 320px;
+		width: 320px;
+	}
+	#logo a img{
+		width:260px;
+	}
+	#logo-wrapper{
+		background-size:1px 40px;
+	}
+	h2.gear,
+	h2.latest,
+	h2.love,
+	h2.quote,
+	div.services {
+		width: 300px;
+	}
+	div.services .left,
+	div.services .middle,
+	div.services .right,
+	div.section,
+	#about-us-content,
+	#quote-form  {
+		width: 260px;
+		margin-left:10px;
+		margin-right:10px;
+	}
+	#latest .work img {
+		width: 140px;
+		height: 140px;
+	}
 }
