@@ -232,11 +232,23 @@
 	<span class="font-oleo-script-swash-caps">tell us about your project:</span>
 	<div class="clear">
 		<div class="float-left">
-			<input type="text" name="name" placeholder="Name *" />
-			<input type="text" name="company" placeholder="Company" />
-			<input type="text" name="website" placeholder="Web site" class="url" />
-			<input type="text" name="email" placeholder="E-mail *" />
-			<input type="text" name="phone" placeholder="Phone" class="phone" />
+			<? // set default quote vals
+			$_POST = array_merge(
+				array(
+					'name' => '',
+					'company' => '',
+					'website' => '',
+					'email' => '',
+					'phone' => ''
+				),
+				$_POST
+			);
+			?>
+			<input type="text" name="name" placeholder="Name *" value="<?= $_POST['name'] ?>"/>
+			<input type="text" name="company" placeholder="Company" value="<?= $_POST['company'] ?>"/>
+			<input type="text" name="website" placeholder="Web site" class="url" value="<?= $_POST['website'] ?>" />
+			<input type="text" name="email" placeholder="E-mail *" value="<?= $_POST['email'] ?>" />
+			<input type="text" name="phone" placeholder="Phone" class="phone" value="<?= $_POST['phone'] ?>" />
 		</div>
 		<div class="float-right">
 			<textarea name="project_info" placeholder="Project info *"></textarea>
