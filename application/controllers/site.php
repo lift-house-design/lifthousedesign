@@ -16,7 +16,8 @@ class Site extends App_Controller
 			<a href="http://lifthousedesign.com/site/search_engine_optimization">Search Engine Optimization</a>,
 			<a href="http://lifthousedesign.com/site/graphic_design">Graphic Design</a>,
 			<a href="http://lifthousedesign.com/site/photography">Photography</a>,
-			<a href="http://lifthousedesign.com/site/videography">Videography</a>, and Voice Acting services';
+			<a href="http://lifthousedesign.com/site/videography">Videography</a>, and Voice Acting services
+			<a href="https://plus.google.com/107260904389521254836" rel="publisher">Google+</a>';
 
 		parent::__construct();
 	}
@@ -66,7 +67,7 @@ class Site extends App_Controller
 		$pathinfo=pathinfo($this->data['work']['url']);
 		$this->data['work']['display_url']=$pathinfo['basename'];
 	}
-
+/*
 	public function login()
 	{
 		if($data=$this->input->post('login'))
@@ -88,7 +89,7 @@ class Site extends App_Controller
 		$this->set_notification('You have successfully logged out.');
 		redirect('/');
 	}
-
+*/
 	public function page()
 	{ // does this do anything on lifthouse?
 		$slug=str_replace('-','_',$this->uri->uri_string());

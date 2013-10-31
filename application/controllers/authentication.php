@@ -16,16 +16,16 @@ class Authentication extends App_Controller
 	public function log_in()
 	{
 		if($this->user->logged_in)
-			redirect('/');
+			redirect('/dashboard');
 
 		$this->authenticate=FALSE;
 		if($this->input->post())
 		{
 			if($this->user->log_in())
 			{
-				redirect($_SERVER['HTTP_REFERER']);
+				redirect('/dashboard');
 			}else{
-				//should show errors here		
+				$this->set_notification('Incorrect account information');		
 			}
 		}
 	}

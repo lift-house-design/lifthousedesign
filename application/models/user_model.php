@@ -4,22 +4,11 @@
 	{
 		public $_table='users';
 		
-		/*public $validate=array(
-			array(
-				'field'=>'',
-				'label'=>'',
-				'rules'=>'required',
-			),
-		);*/
-		
 		public $has_many=array();
 		
 		public $belongs_to=array();
 		
 		public $after_get=array();
-
-		/* User members
-		-------------------------------------------------------------------------*/
 
 		public $logged_in=FALSE;
 		
@@ -29,8 +18,8 @@
 		{
 			parent::__construct();
 			
-			$user=$this->session->userdata('user');
-			$this->logged_in=!empty($user);
+			$user = $this->session->userdata('user');
+			$this->logged_in = !empty($user);
 			
 			if($this->logged_in)
 				$this->data=$user;
@@ -88,6 +77,21 @@
 		public function authenticate($role=NULL)
 		{
 			return $this->logged_in===TRUE;
+		}
+
+		public function add_credits($credits)
+		{
+			$balance = $this->data['credit_balance'];
+			$balance += $credits;
+			$balance = round($balance, 2);
+
+			$this->update(
+				$this->data['id'],
+				array( 'credit_balance' => $balance )
+			);
+
+			$user = $this->user->get($this->user->data['id']);
+			$this->session->set_userdata('user',$user);
 		}
 	}
 	

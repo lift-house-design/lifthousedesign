@@ -3,7 +3,7 @@
 			<nav>
 				<?php if($logged_in): ?>
 					<?php echo anchor('dashboard','Dashboard','class="dashboard"') ?>
-					<?php echo anchor('/site/logout','Log Out','class="logout"') ?>
+					<?php echo anchor('/authentication/log_out','Log Out','class="logout"') ?>
 				<?php else: ?>
 					<a class="login">Log In</a>
 				<?php endif; ?>
@@ -14,7 +14,7 @@
 				<a class="top" href="#top">Top</a>
 			</nav>
 			<div id="login">
-				<?php echo form_open('/site/login') ?>
+				<?php echo form_open('/authentication/log_in') ?>
 					<?php echo form_input(array(
 						'name'=>'email',
 						'placeholder'=>'E-MAIL',

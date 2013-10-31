@@ -1,3 +1,36 @@
+#admin{
+  max-width:600px;
+  margin:0px auto;
+}
+
+.add_credits_wrapper{
+  max-width:420px;
+  width:auto;
+  margin:10px auto;
+  overflow:auto;
+}
+
+.add_credits_wrapper label,
+.add_credits_wrapper input{
+  margin-bottom:10px;
+  float:left;
+  display:block;
+  width:220px;
+}
+.add_credits_wrapper h2{
+  text-align:center;
+}
+
+.add_credits_wrapper label{
+  text-align:right;
+  padding-right:20px;
+  width:150px;
+}
+
+.add_credits_wrapper .info{
+  text-align:center;
+}
+
 #contact-us-floater{
   position:fixed;
   bottom:-2px;
@@ -528,8 +561,11 @@ a:visited {
 .buttons {
   text-align: center;
   padding: 10px 20px;
+  /*
   background-color: #f5efe2;
-  border-top: 5px solid #3a3637; }
+  border-bottom: 5px solid #3a3637; 
+  */
+}
 
 /*
 |--------------------------------------------------------------------------

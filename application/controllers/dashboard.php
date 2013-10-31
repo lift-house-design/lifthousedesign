@@ -4,6 +4,13 @@ class Dashboard extends App_Controller
 {
 	private $_cache_harvest=FALSE;
 
+	public function __construct()
+	{
+		parent::__construct();
+		if(!$this->user->logged_in)
+			redirect('/');
+	}
+
 	public function index()
 	{
 		$config=$this->config->item('harvest');
@@ -67,34 +74,53 @@ class Dashboard extends App_Controller
 		$this->js[]='jquery.validate.additional-methods.min.js';
 		// Load page js
 		$this->js[]='dashboard-index.js';
+	}
 
-		if($this->input->post('update_profile'))
+	public function update_profile()
+	{
+		//security issues, dont allow user to set some fields..
+		$allowed_fields = array('change_password','confirm_password','first_name','last_name','company_name','phone_number','fax_number');
+		$post = array();
+		foreach($allowed_fields as $field)
+			$post[$field] = $this->input->post($field);
+		
+		if($this->user->update($this->user->data['id'], $post))
 		{
-			if($this->user->update($this->user->data['id'],$this->input->post()))
-			{
-				$user=$this->user->get($this->user->data['id']);
-				$this->session->set_userdata('user',$user);
+			$user=$this->user->get($this->user->data['id']);
+			$this->session->set_userdata('user',$user);
 
-				$this->set_notification('Your profile was successfully updated.');
+			$this->set_notification('Your profile was successfully updated.');
+		}
+
+		if($post['change_password'] && $post['confirm_password'])
+		{
+			if($post['change_password'] != $post['confirm_password'])
+			{
+				$this->form_validation->set_error('Your new passwords must match in order to continue changing your password.');
 			}
-
-			if($this->input->post('change_password') && $this->input->post('confirm_password'))
+			elseif($this->user->update($this->user->data['id'], array('password'=>sha1($post['change_password']))))
 			{
-				if($this->input->post('change_password') != $this->input->post('confirm_password'))
-				{
-					$this->form_validation->set_error('Your new passwords must match in order to continue changing your password.');
-				}
-				elseif($this->user->update($this->user->data['id'],array('password'=>sha1($this->input->post('change_password')))))
-				{
-					$this->set_notification('Your password was successfully changed.');
-				}
-				else 
-				{
-					$this->form_validation->set_error('There was a problem changing your password.');
-				}
+				$this->set_notification('Your password was successfully changed.');
+			}
+			else 
+			{
+				$this->form_validation->set_error('There was a problem changing your password.');
 			}
 		}
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	public function project()
 	{

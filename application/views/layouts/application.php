@@ -8,6 +8,21 @@
 		array('name'=>'description','content'=>$meta['description']),
 		array('name'=>'author','content'=>'Nick Niebaum (nickniebaum@gmail.com)'),
 	)) ?>
+
+	<!-- favicons -->
+	<!-- old android -->
+	<link rel="apple-touch-icon-precomposed" type="image/png" href="/assets/favicons/favicon_pretty_64.png" sizes="64x64" />
+	<!-- apple/android -->
+	<!--link rel="apple-touch-icon" type="image/png" href="/assets/favicons/favicon_144.png" sizes="144x144" />
+	<link rel="apple-touch-icon" type="image/png" href="/assets/favicons/favicon_114.png" sizes="114x114" />
+	<link rel="apple-touch-icon" type="image/png" href="/assets/favicons/favicon_72.png" sizes="72x72" /-->
+	<link rel="apple-touch-icon" type="image/png" href="/assets/favicons/favicon_pretty_57.png" />
+	<!-- most browsers -->
+	<link rel="icon" type="image/png" href="/assets/favicons/favicon_pretty_64.png" sizes="64x64" />
+	<link rel="icon" type="image/png" href="/assets/favicons/favicon_pretty_32.png" sizes="32x32" />
+	<!-- IE -->
+	<link rel="shortcut icon" href="/assets/favicons/favicon_pretty.ico">
+
 	<?php echo css($css) ?>
 	<link href='http://fonts.googleapis.com/css?family=Croissant+One' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Delius+Unicase' rel='stylesheet' type='text/css'>

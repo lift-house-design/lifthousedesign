@@ -36,6 +36,8 @@ urna eros, tempus sollicitudin orci at, bibendum cursus velit.</p>
 	</table-->
 
 	<h2 class="colorbar-2">Billing</h2>
+	<h3>Current Balance: $<?= $user['credit_balance'] ?> <a href="/charge/add_credits">Add Credits</a></h3>
+	<?/* var_dump($user);*/?>
 	<!--table id="billing">
 		<thead>
 			<tr>
